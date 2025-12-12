@@ -1,83 +1,88 @@
 
 ---
 
-# Services (Evaluation-First Version, Publication-Ready)
+# `01_services/services_page.md`
+
+**FINAL – Canonical, Evaluation-First Version**
+
+---
+
+# Services
 
 ## Evaluation-First Knowledge System Assessment & Prototype
 
-### What this service is
+---
 
-I help organizations **design AI-assisted knowledge systems that can be meaningfully evaluated, governed, and trusted before they are deployed**.
+## What this service is
 
-Most GenAI initiatives fail not because the models are weak, but because *success is never defined in a way that reflects real organizational risk*. This service addresses that gap by placing **evaluation and decision quality** at the center of system design.
+I help organizations design **evaluation-first AI-assisted knowledge systems** that can be meaningfully evaluated, governed, and trusted **before deployment**.
 
-The outcome is not a demo chatbot, but a **clear, evidence-based decision** on whether such a system should exist in your context — and under what constraints.
+The focus is not on building chatbots or pilots, but on defining **acceptance criteria, failure modes, and decision risk** before any system is operationalized.
+
+The outcome is a **clear, evidence-based decision** on whether such a system should exist in your context — and under what constraints.
 
 ---
 
-### Why this approach
+## The problem this service addresses
 
-Industry experience shows that the majority of GenAI pilots fail in production due to:
+Most GenAI initiatives fail not because models are weak, but because **success and failure are never defined in a way that reflects real organizational risk**.
 
-* undefined or implicit success criteria
-* lack of domain-specific evaluation data
-* no error taxonomy or acceptance thresholds
-* inability to reason about failure modes
-* missing human-in-the-loop design
+As a result:
 
-This service is built around the opposite principle:
+* systems perform well in demos but fail in real use
+* unacceptable errors are discovered too late
+* refusal and uncertainty are not designed
+* trust erodes quickly
 
-> **If a system cannot be evaluated in a way that reflects domain risk, it should not be deployed.**
+This service is built on the opposite principle:
+
+> **If a system cannot be meaningfully evaluated in its domain context, it should not be deployed.**
 
 ---
 
-### Who this service is for
+## Who this service is for
 
 This service is suited for organizations where:
 
-* decisions depend on complex internal documents or policies
-* incorrect answers have legal, financial, or reputational consequences
-* AI systems must be auditable and explainable
-* data use is constrained by regulation or governance
-* there is pressure to “use GenAI”, but uncertainty about how to do so responsibly
+* decisions depend on complex internal documents
+* incorrect or misleading answers have legal, financial, or reputational consequences
+* explainability, auditability, and governance matter
+* data usage is constrained by regulation or policy
 
-Typical contexts include public institutions, regulated organizations, NGOs, and research-driven environments.
+Typical contexts include regulated organizations, public institutions, NGOs, and research-driven environments.
 
 ---
 
-### Who this service is *not* for
+## Who this service is not for
 
-This service is not intended for organizations seeking:
+This service is **not** intended for organizations seeking:
 
-* a ready-made SaaS chatbot
-* customer support or sales automation
-* real-time or mission-critical AI systems
-* rapid prototyping without evaluation rigor
-* ongoing system operations or maintenance
+* a ready-made SaaS product
+* customer support or sales chatbots
+* rapid experimentation or demo-driven pilots
+* real-time or mission-critical systems
+* ongoing system operation or maintenance
 
 If speed matters more than correctness, this engagement is not a good fit.
 
 ---
 
-## Scope & approach (Evaluation-first)
+## Scope & approach (evaluation-first)
 
-The engagement is structured as a **time-boxed assessment and prototype**, typically over **6–8 weeks**, and is organized around evaluation rather than implementation speed.
+The engagement is structured as a **fixed-scope, time-boxed assessment** (typically **6–8 weeks**) and follows a strict evaluation-first sequence.
 
 ---
 
 ### 1. Use-case & risk framing
 
-We begin by clarifying:
+We clarify:
 
 * which decisions the system would support
-* what constitutes a *wrong* or *unacceptable* answer
-* which failure modes are tolerable vs unacceptable
-* where the system must refuse to answer
 * who remains accountable for outcomes
+* what constitutes unacceptable vs tolerable failure
+* where the system must refuse to answer
 
-This step anchors the entire evaluation design.
-
-**Deliverable:**
+**Deliverable**
 Problem & risk framing document
 
 ---
@@ -88,85 +93,86 @@ We assess:
 
 * document types and structure
 * sensitivity and access constraints
-* data quality and coverage gaps
-* governance and audit requirements
+* audit and governance requirements
+* data gaps and no-go signals
 
-This step often surfaces reasons *not* to proceed — which is considered a valid outcome.
+A recommendation **not to proceed** is considered a valid outcome.
 
-**Deliverable:**
-Data readiness & governance memo (including go / no-go signals)
+**Deliverable**
+Data readiness & governance memo
 
 ---
 
 ### 3. Joint evaluation & system design (with SMEs)
 
-This is the core differentiator of the engagement.
+This is the core of the engagement.
 
-In structured working sessions with Subject Matter Experts and process owners, we jointly design:
+In structured working sessions, **Subject Matter Experts co-define**:
 
-* task-specific evaluation datasets
-* domain-relevant success and failure criteria
-* error taxonomies (hallucination, omission, ambiguity, outdated information, etc.)
-* acceptance thresholds aligned to organizational risk
-* human-in-the-loop and override rules
+* domain-specific acceptance criteria
+* failure modes and refusal rules
+* evaluation datasets reflecting real decision risk
 
 Evaluation design precedes system optimization.
 
-**Deliverables:**
+**Deliverables**
 
 * Evaluation design document
-* Initial SME-validated evaluation set
+* SME-validated evaluation dataset
 
 ---
 
 ### 4. Evaluation-guided prototype
 
-A limited-scope prototype is implemented **as a test harness**, not as a production system.
+A limited-scope prototype is implemented as an **instrumented test harness**, not a production system.
 
-The prototype is instrumented to:
+It is used to:
 
-* run batch evaluations
-* inspect retrieval and answer quality
-* analyze failure modes
-* support regression testing as data or prompts change
+* run evaluations against agreed criteria
+* inspect failure modes and trade-offs
+* identify irreducible risks
 
-The goal is to make failures visible, inspectable, and discussable.
-
-**Deliverables:**
+**Deliverables**
 
 * Instrumented prototype
-* Evaluation report with failure analysis and trade-offs
+* Evaluation report with failure analysis
 
 ---
 
 ### 5. Decision memo
 
-The engagement concludes with a structured decision memo covering:
+The engagement concludes with a structured recommendation to:
 
-* whether the system meets acceptance criteria
-* what would be required to reach them
-* which risks remain irreducible
-* whether to proceed, iterate, or stop
+> **Proceed · Iterate · Stop**
 
-**Deliverable:**
-Decision memo suitable for internal governance and management review
+**Deliverable**
+Decision memo suitable for management and governance review
+
+---
+
+## Engagement success criteria
+
+This engagement is successful if, at the end of the assessment, the organization has:
+
+* a documented evaluation framework grounded in domain risk
+* a prototype tested against SME-defined acceptance criteria
+* a clear, defensible decision to proceed, iterate, or stop
+
+No production deployment is required for success.
 
 ---
 
 ## Evaluation infrastructure & continuity
 
-As part of the engagement, I provide an **evaluation interface and workflow** based on *Evaluizer*, an open-source evaluation framework designed for systematic LLM assessment and optimization.
+An evaluation interface based on **Evaluizer** is used during the engagement and handed over so internal teams can continue evaluation independently.
 
-This allows organizations to:
+This enables:
 
-* visualize model outputs against evaluation datasets
-* manually annotate and review results with SMEs
-* run automated evaluations using deterministic functions and LLM judges
-* track performance over time as prompts, data, or models change
+* transparent inspection of system behavior
+* repeatable evaluation over time
+* regression detection as data or prompts change
 
-The goal is to **reduce fear around long-term maintenance** and enable internal teams to continue evaluation after the engagement ends.
-
-Evaluizer is adapted and configured for the specific use case and handed over as part of the delivery.
+No vendor lock-in is introduced.
 
 ---
 
@@ -178,14 +184,29 @@ Evaluizer is adapted and configured for the specific use case and handed over as
 * No production deployment
 * No ongoing operational responsibility
 
-Engagements are conducted independently using client-provided data and environments, with strict separation from any employer-related activities.
+**This engagement is intentionally conservative and is not designed for rapid experimentation or production deployment.**
+
+---
+
+## Time commitment
+
+* SME involvement is typically limited to **2–4 hours total**, primarily through a structured evaluation workshop
+* One decision owner is required for scoping and sign-off
 
 ---
 
 ## Independence & IP
 
-All engagements use only client-provided or publicly available materials.
-I ensure strict separation from any employer-related activities and do not reuse or derive from confidential or proprietary information of third parties.
+All work is conducted independently and uses only client-provided or publicly available materials.
+No confidential or proprietary information of third parties is reused or derived.
+
+---
+
+## If the recommendation is to stop
+
+If the recommendation is not to proceed, **all evaluation artifacts, decision frameworks, and findings remain usable** for future initiatives, audits, or internal reviews.
+
+Stopping is treated as a valid and valuable outcome.
 
 ---
 
@@ -195,51 +216,3 @@ If you are considering an AI-assisted knowledge system and want to determine **w
 
 ---
 
-# Consultant’s assessment of this positioning
-
-This rewrite does three important things:
-
-1. **Evaluation is no longer a feature — it is the product**
-2. You sell *decision safety*, not model performance
-3. Evaluizer is positioned as **risk-reducing infrastructure**, not a shiny tool
-
-This is exactly how you avoid:
-
-* academic overtones
-* tool-centric selling
-* being mistaken for an “AI dev shop”
-
----
-
-# What we do next (as requested)
-
-Now that the Services page is coherent, the next two artifacts should be:
-
-### Next 1️⃣ SME Workshop Agenda (sales + delivery artifact)
-
-A concrete, 90–120 minute agenda you can:
-
-* attach to proposals
-* walk through in intro calls
-* use to show seriousness without code
-
-### Next 2️⃣ “Why 95% of GenAI Systems Fail” One-Pager
-
-A short, non-technical explainer you can:
-
-* send before first calls
-* use internally with skeptical stakeholders
-* anchor your evaluation-first narrative
-
-Both are **high-leverage** and low effort.
-
----
-
-**My recommendation:**
-👉 Next, we design the **SME Evaluation Workshop agenda**, because it makes the service tangible and dramatically increases conversion quality.
-
-If you agree, say:
-
-> “Let’s design the SME workshop agenda.”
-
-We’ll do it at the same level of rigor as everything else.

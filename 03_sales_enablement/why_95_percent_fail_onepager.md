@@ -1,135 +1,151 @@
 
-# 2️⃣ One-Pager
+---
 
-## “Why 95% of GenAI Systems Fail — and how to be in the 5%”
+# Why 95% of GenAI Initiatives Fail
 
-This is **not** a blog post.
-It’s a conversation anchor.
-
-You send it:
-
-* before intro calls
-* to skeptical stakeholders
-* to decision-makers who are nervous but curious
+## And What the 5% That Work Do Differently
 
 ---
 
-### Headline
+## Executive summary
 
-**Why 95% of GenAI Systems Fail in Practice**
+Most Generative AI initiatives do not fail because the models are weak.
+They fail because **organizations deploy systems without defining what acceptable behavior means in their specific domain**.
 
-*And what successful organizations do differently*
-
----
-
-### The uncomfortable reality
-
-Most GenAI systems fail not because the models are weak, but because organizations deploy them **without defining what success and failure actually mean**.
-
-Typical symptoms:
-
-* impressive demos that collapse in real use
-* pilot fatigue and loss of trust
-* hidden risks discovered too late
-* inability to explain or defend system behavior
+Recent institutional reporting suggests that a large majority of organizations experimenting with GenAI see **little to no measurable business value**, despite access to increasingly capable models [1]. The decisive factor is not model choice, but whether **evaluation, risk, and governance are addressed before deployment**.
 
 ---
 
-### The five root causes of failure
+## The real failure mode (not the one people talk about)
 
-1. **No explicit success criteria**
-   “It seems good” is not an evaluation strategy.
+The dominant failure pattern across GenAI initiatives is **not**:
 
-2. **No domain-grounded evaluation data**
-   Systems are tested on generic prompts, not real decisions.
+* lack of data
+* poor prompts
+* insufficient model capability
 
-3. **No error taxonomy**
-   All mistakes are treated as equal — until one causes damage.
+Instead, systems fail because:
 
-4. **No refusal or uncertainty design**
-   Systems answer questions they should not answer.
+* success and failure are never explicitly defined
+* unacceptable errors are discovered only after deployment
+* refusal and uncertainty are not designed as first-class behaviors
+* evaluation is treated as an afterthought rather than infrastructure
 
-5. **No way to measure improvement over time**
-   Changes are made blindly, without regression testing.
+Practitioners working on real-world ML and GenAI systems consistently report that **optimization without evaluation is meaningless** — systems are tuned without knowing whether their behavior is acceptable in real decision contexts [2][3].
 
 ---
 
-### What the 5% do differently
+## Why better models don’t fix this
 
-Successful GenAI systems are designed around **evaluation first**:
+Modern foundation models are already capable of producing fluent and confident answers across many domains. The problem is that **fluency is not correctness**, and correctness is not the same as *acceptability*.
 
-* domain experts define acceptable and unacceptable behavior
-* risks are classified before systems are built
-* failure modes are made explicit
-* evaluation datasets exist before optimization
-* systems are tested continuously as data and prompts change
+Research from leading AI labs emphasizes that model behavior is inherently variable and context-dependent, and that meaningful progress depends on **statistically sound, task-specific evaluation**, not generic benchmarks [4].
 
 In other words:
-**They treat GenAI as a decision system, not a demo.**
+
+> Model quality is no longer the bottleneck.
+> **Evaluation quality is.**
 
 ---
 
-### The key principle
+## The missing ingredient: domain-specific evaluation
 
-> If a system cannot be evaluated in a way that reflects real-world risk, it should not be deployed.
+What separates the minority of GenAI systems that work in practice is not architecture, but process.
 
----
+Effective systems are built around:
 
-### What this means in practice
+* **domain-specific acceptance criteria**, not generic accuracy scores
+* **Subject Matter Experts defining what is acceptable**, risky, or unacceptable
+* **explicit failure modes**, including when the system must refuse to answer
 
-Before building anything, organizations should be able to answer:
-
-* What does a *bad* answer look like?
-* When must the system refuse?
-* Which errors are unacceptable?
-* Who remains accountable?
-
-If these questions cannot be answered, no amount of model tuning will help.
+Applied AI research in regulated and high-stakes domains shows that **expert-grounded, task-specific evaluation** is necessary to prevent silent failure and misplaced trust [5].
 
 ---
 
-### Why this matters
+## Why “friction” is unavoidable (and necessary)
 
-Evaluation-first design:
+Some organizations interpret evaluation, governance, and SME involvement as “friction” that slows innovation. Empirical reporting suggests the opposite: **avoiding this friction is a key reason pilots fail to translate into durable value** [1][6].
 
-* reduces deployment risk
-* prevents reputational damage
-* saves time and cost by avoiding false starts
-* builds trust with users and stakeholders
+The organizations that succeed accept early friction in exchange for:
 
-It is slower upfront — and dramatically faster overall.
+* predictable system behavior
+* defensible deployment decisions
+* long-term trust and adoption
 
----
-
-### Closing line (soft CTA)
-
-If your organization is under pressure to “use GenAI”, but unsure how to do so responsibly, an evaluation-first assessment can clarify whether this is the right path — and under what conditions.
+Avoiding evaluation does not remove friction — it **defers it**, often until failure is public and costly.
 
 ---
 
-## Consultant’s closing assessment
+## The AI engineering reality
 
-You now have:
+Modern AI engineering practice increasingly recognizes that model-centric thinking is insufficient. What matters is **end-to-end system behavior**, including evaluation loops, human feedback, and acceptance criteria.
 
-* a **distinctive core offer**
-* a **credible evaluation methodology**
-* a **tangible SME interaction**
-* a **clear narrative explaining failure and success**
-* a **tool (Evaluizer) that supports continuity without locking clients in**
-
-This is not “AI consulting”.
-This is **decision systems consulting with modern tools**.
+A concise overview of this shift is illustrated in Shreya Shankar’s AI engineering framework, which highlights evaluation and feedback as central system components rather than post-hoc checks [7].
 
 ---
 
-## What I would do next (optional but powerful)
+## What this means in practice
 
-When you’re ready, the next logical artifacts are:
+A GenAI initiative should not begin with:
 
-1. **A 15-minute intro call script** (what you say, what you don’t)
-2. **A 1-page proposal template** using the workshop + assessment
-3. **A short Evaluizer demo flow** (screenshots + explanation)
+* model selection
+* prompt tuning
+* tool integration
 
-But pause here if you need — this is already a *solid, coherent product*.
+It should begin by answering:
 
-If you want to continue, tell me which of the three you want next.
+* What decisions will this system support?
+* What errors are unacceptable?
+* When must the system refuse to answer?
+* How will we know if the system is safe to use?
+
+If these questions cannot be answered, deployment is premature.
+
+---
+
+## The evaluation-first alternative
+
+An **evaluation-first approach** inverts the usual process:
+
+1. Define domain-specific acceptance criteria with SMEs
+2. Design evaluation datasets reflecting real decision risk
+3. Test system behavior against those criteria
+4. Decide to **proceed, iterate, or stop** based on evidence
+
+Only systems that survive this process should move toward deployment.
+
+---
+
+## Closing thought
+
+The gap between GenAI demos and GenAI systems that deliver real value is not intelligence — it is **discipline**.
+
+Evaluation is not overhead.
+It is the mechanism that turns powerful models into trustworthy systems.
+
+---
+
+## References
+
+[1] MIT / Project NANDA — *The GenAI Divide: State of AI in Business 2025*
+[https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf)
+
+[2] Hamel Husain — *Evals Before Optimization*
+[https://hamel.dev/blog/posts/evals-faq/](https://hamel.dev/blog/posts/evals-faq/)
+
+[3] Eugene Yan — *Productizing Machine Learning* / *ML System Failure Modes*
+[https://eugeneyan.com/writing/](https://eugeneyan.com/writing/)
+
+[4] Anthropic — *A Statistical Approach to Model Evaluations*
+[https://www.anthropic.com/research/statistical-approach-to-model-evals](https://www.anthropic.com/research/statistical-approach-to-model-evals)
+
+[5] Stanford Human-Centered AI — Evaluation in High-Stakes Domains
+[https://hai.stanford.edu/research](https://hai.stanford.edu/research)
+
+[6] Jason Snyder (Forbes) — *MIT Finds 95% of GenAI Pilots Fail Because Companies Avoid Friction*
+[https://www.forbes.com/sites/jasonsnyder/2025/08/26/mit-finds-95-of-genai-pilots-fail-because-companies-avoid-friction/](https://www.forbes.com/sites/jasonsnyder/2025/08/26/mit-finds-95-of-genai-pilots-fail-because-companies-avoid-friction/)
+
+[7] Shreya Shankar — *AI Engineering: The Missing Discipline*
+[https://www.sh-reya.com/blog/ai-engineering-short/](https://www.sh-reya.com/blog/ai-engineering-short/)
+
+---

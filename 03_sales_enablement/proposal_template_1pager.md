@@ -3,36 +3,38 @@
 
 # Proposal
 
-**Evaluation-First Knowledge System Assessment & Prototype**
+## Evaluation-First Knowledge System Assessment & Prototype
 
 **Client:** [Organization name]
-**Date:** [Date]
+**Prepared for:** [Decision owner / unit]
 **Prepared by:** Fatih Ünal
+**Date:** [Date]
 
 ---
 
-## 1. Context & Objective
+## 1. Context & objective
 
-[Organization] is exploring the use of **AI-assisted knowledge systems** to support decisions related to:
+[Organization] is exploring the use of an **AI-assisted knowledge system** to support decisions related to:
 
-* **Decision(s):** [brief description]
-* **Users:** [roles / functions]
-* **Primary risk:** [e.g. incorrect, incomplete, or outdated answers]
+* **Decisions supported:** [short description]
+* **Primary users:** [roles / functions]
+* **Primary risk:** [e.g. incorrect, incomplete, or misleading answers]
 
-The objective of this engagement is **not to deploy a production system**, but to determine **whether such a system can be trusted in this domain**, and under which conditions.
+The objective of this engagement is **not to deploy a production system**, but to determine **whether such a system can be trusted in this domain**, and under which constraints.
 
 ---
 
 ## 2. Why an evaluation-first approach
 
-Industry experience shows that most GenAI initiatives fail in practice because:
+Most GenAI initiatives fail not because models are weak, but because **success and failure are never defined in a way that reflects real organizational risk**.
 
-* success criteria are implicit or undefined
-* evaluation does not reflect real decision risk
-* failure modes are discovered too late
-* there is no mechanism for ongoing assessment
+As a result:
 
-This engagement is designed around a different principle:
+* unacceptable errors are discovered late
+* refusal and uncertainty are not designed
+* systems perform well in demos but fail in practice
+
+This engagement is based on a single principle:
 
 > **If a system cannot be meaningfully evaluated in its domain context, it should not be deployed.**
 
@@ -40,55 +42,68 @@ This engagement is designed around a different principle:
 
 ## 3. Scope of the engagement (6–8 weeks)
 
+The engagement is a **fixed-scope, time-boxed assessment** structured around evaluation before implementation.
+
+---
+
 ### 3.1 Use-case & risk framing
 
-* Clarify supported decisions and accountability
-* Identify unacceptable vs tolerable failure modes
-* Define when the system must refuse to answer
+We clarify:
 
-**Deliverable:**
+* which decisions the system would support
+* who remains accountable for outcomes
+* what constitutes unacceptable vs tolerable failure
+* where the system must refuse to answer
+
+**Deliverable**
 Problem & risk framing document
 
 ---
 
 ### 3.2 Data & governance readiness
 
-* Review document types and structure
-* Assess sensitivity, access constraints, and audit requirements
-* Identify data gaps and no-go signals
+We assess:
 
-**Deliverable:**
+* document types and structure
+* sensitivity and access constraints
+* audit and governance requirements
+* data gaps and no-go signals
+
+A recommendation **not to proceed** is considered a valid outcome.
+
+**Deliverable**
 Data readiness & governance memo
 
 ---
 
 ### 3.3 Joint evaluation & system design (with SMEs)
 
-Structured working sessions with Subject Matter Experts to define:
+In structured working sessions, **Subject Matter Experts co-define**:
 
-* domain-specific success and failure criteria
-* error taxonomy and refusal rules
-* acceptance thresholds aligned to organizational risk
-* initial evaluation dataset (SME-authored or validated)
+* domain-specific acceptance criteria
+* failure modes and refusal rules
+* evaluation datasets reflecting real decision risk
 
-**Deliverables:**
+Evaluation design precedes system optimization.
+
+**Deliverables**
 
 * Evaluation design document
-* Initial evaluation dataset
+* SME-validated evaluation dataset
 
 ---
 
 ### 3.4 Evaluation-guided prototype
 
-Implementation of a **limited-scope, instrumented prototype** to:
+A limited-scope prototype is implemented as an **instrumented test harness**, not a production system.
 
-* run batch evaluations against agreed criteria
-* analyze failure modes and trade-offs
-* support regression testing as prompts or data change
+It is used to:
 
-The prototype serves as a **test harness**, not a production system.
+* run evaluations against agreed criteria
+* inspect failure modes and trade-offs
+* identify irreducible risks
 
-**Deliverables:**
+**Deliverables**
 
 * Instrumented prototype
 * Evaluation report with failure analysis
@@ -97,54 +112,54 @@ The prototype serves as a **test harness**, not a production system.
 
 ### 3.5 Decision memo
 
-A structured recommendation covering:
+The engagement concludes with a structured recommendation to:
 
-* feasibility against acceptance criteria
-* remaining risks and constraints
-* effort required to proceed
-* recommendation to proceed, iterate, or stop
+> **Proceed · Iterate · Stop**
 
-**Deliverable:**
+**Deliverable**
 Decision memo suitable for management and governance review
 
 ---
 
-## 4. Evaluation infrastructure
+## 4. Engagement success criteria
 
-As part of the engagement, an **evaluation interface and workflow** is provided based on *Evaluizer*, an open-source framework for systematic LLM evaluation.
+This engagement is successful if, at the end of the assessment, the organization has:
+
+* a documented evaluation framework grounded in domain risk
+* a prototype tested against SME-defined acceptance criteria
+* a clear, defensible decision to proceed, iterate, or stop
+
+No production deployment is required for success.
+
+---
+
+## 5. Evaluation infrastructure & continuity
+
+An evaluation interface based on **Evaluizer** is used during the engagement and handed over so internal teams can continue evaluation independently.
 
 This enables:
 
-* transparent review of model outputs against evaluation datasets
-* manual annotation by SMEs
-* automated checks using deterministic functions and LLM judges
-* continued evaluation after the engagement concludes
+* transparent inspection of system behavior
+* repeatable evaluation over time
+* regression detection as data or prompts change
 
-The tooling is configured for the specific use case and handed over as part of the delivery.
-
----
-
-## 5. Engagement model
-
-* Fixed scope
-* Fixed duration (6–8 weeks)
-* Limited number of concurrent clients
-* No production deployment
-* No ongoing operational responsibility
-
-Work is conducted independently using client-provided data and environments.
+No vendor lock-in is introduced.
 
 ---
 
-## 6. Roles & expectations
+## 6. Roles & time commitment
 
-**Client provides:**
+**Client provides**
 
 * access to representative documents
-* availability of 2–4 SMEs for evaluation workshops
-* a decision owner for scoping and sign-off
+* availability of **2–4 Subject Matter Experts**
+* one decision owner for scoping and sign-off
 
-**Consultant provides:**
+**Time commitment**
+
+* SME involvement is typically limited to **2–4 hours total**, primarily through a structured evaluation workshop
+
+**Consultant provides**
 
 * evaluation-first methodology
 * facilitation of SME workshops
@@ -153,13 +168,15 @@ Work is conducted independently using client-provided data and environments.
 
 ---
 
-## 7. Commercials
+## 7. Engagement model
 
-**Fee:** CHF [XX’000] (fixed)
-**Payment terms:** [e.g. 50% start / 50% end]
-**Start date:** [date]
+* Fixed scope
+* Fixed duration (6–8 weeks)
+* Limited number of concurrent clients
+* No production deployment
+* No ongoing operational responsibility
 
-No licenses or recurring fees.
+**This engagement is intentionally conservative and is not designed for rapid experimentation or production deployment.**
 
 ---
 
@@ -170,43 +187,24 @@ No confidential or proprietary information of third parties is reused or derived
 
 ---
 
-## 9. Next step
+## 9. If the recommendation is to stop
+
+If the recommendation is not to proceed, **all evaluation artifacts, decision frameworks, and findings remain usable** for future initiatives, audits, or internal reviews.
+
+Stopping is treated as a valid and valuable outcome.
+
+---
+
+## 10. Commercials
+
+**Fee:** CHF [XX’000] (fixed)
+**Payment terms:** [e.g. 50% start / 50% end]
+**Start date:** [date]
+
+---
+
+## 11. Next step
 
 Upon confirmation, the engagement starts with scheduling the **SME Evaluation Workshop**, followed by document review and detailed planning.
 
 ---
-
-### Consultant note (internal)
-
-This proposal is intentionally conservative.
-If a client pushes for speed, production, or guarantees → **decline or re-scope**.
-
----
-
-## What we’ve achieved so far
-
-At this point you have:
-
-* a **clear service**
-* a **repeatable sales call**
-* a **proposal that matches the call**
-* consistent language across all artifacts
-
-This is already a complete consulting “machine”.
-
----
-
-## Next (final artifact in this set)
-
-👉 **`05_tools_evaluizer/evaluizer_demo_flow.md`**
-A short, non-technical demo flow you can:
-
-* show in follow-up calls
-* include screenshots from later
-* use to reduce fear around “maintenance after you leave”
-
-When you’re ready, say:
-
-> “Proceed with the Evaluizer demo flow.”
-
-We’ll keep it tight and usable.

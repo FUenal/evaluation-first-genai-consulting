@@ -3,180 +3,233 @@
 
 # 15-Minute Intro Call Script
 
-**Evaluation-First Knowledge System Assessment & Prototype**
+## Evaluation-First Knowledge System Assessment & Prototype
 
-## Goal of the call (internal)
-
-* Qualify fast: **is this a good fit** and **is there a real problem**
-* Align expectations: **not a chatbot demo**, **not production**
-* Secure next step: either **SME workshop** or **polite no**
-
-## Tone
-
-Calm, structured, senior. No hype.
+**FINAL – Canonical Version**
 
 ---
 
-## 0:00–0:45 — Opening
+## Objective of the call (internal)
 
-**You say:**
+This call has **one purpose**:
 
-> Thanks for taking the time. To make this useful, I suggest a short structure:
-> I’ll briefly explain how I work (2 minutes), then I’ll ask a few questions about your context (8–9 minutes), and we’ll close with a clear next step (2–3 minutes). Does that work?
+> Determine whether an **evaluation-first assessment** is appropriate — and if so, whether to proceed to an SME Evaluation Workshop.
 
-*(If they say yes, proceed. If they go off-track early, gently return to the structure.)*
-
----
-
-## 0:45–2:30 — What you do (your positioning, short)
-
-**You say:**
-
-> I help organizations design **AI-assisted knowledge systems that can be meaningfully evaluated and governed before deployment**.
-> Most GenAI efforts fail because success criteria and failure modes are not defined in a domain-specific way.
-> My approach is evaluation-first: we co-design acceptance criteria and an evaluation set with SMEs, then build a small instrumented prototype to test feasibility and risk.
-> The deliverable is a clear decision: proceed, iterate, or stop — with evidence.
-
-**Optional (if they ask “why you?”):**
-
-> My background is in data science, governance/decision-making, and cybersecurity in regulated environments — so I’m conservative by design.
+This is **not** a sales pitch.
+This is a **fit check**.
 
 ---
 
-## 2:30–11:30 — Qualification questions (pick 6–8, don’t rush)
+## Tone & posture
 
-### A) Use case & decisions (must-have)
+* Calm
+* Structured
+* Conservative
+* No hype
+* No promises
 
-1. **Decision:**
+If you sound excited, you’re doing it wrong.
 
-> What decision(s) would this system support? What changes if the answer is good?
+---
 
-2. **Users:**
+## 0:00–1:00 — Opening & framing
 
-> Who would use it day-to-day, and who would be accountable for outcomes?
+**You say (verbatim):**
 
-3. **Current workflow pain:**
+> Thanks for taking the time.
+>
+> To keep this useful, I suggest a simple structure:
+> I’ll briefly explain how I work (about two minutes), then I’ll ask a few questions about your context, and we’ll end with a clear next step.
+>
+> Does that work for you?
 
-> How do people solve this today — searching, asking colleagues, reinventing, manual review?
+If they say no → already a warning sign.
 
-### B) Risk & failure tolerance (must-have)
+---
 
-4. **Cost of being wrong:**
+## 1:00–3:00 — What you do (locked wording)
+
+**You say (verbatim):**
+
+> I work on **evaluation-first AI-assisted knowledge systems**.
+>
+> The focus is not on building chatbots or pilots, but on defining **acceptance criteria, failure modes, and decision risk** before any system is deployed.
+>
+> The outcome of my work is a clear recommendation to **proceed, iterate, or stop**, based on evidence — not a production system.
+
+Stop here.
+Do **not** elaborate unless asked.
+
+---
+
+## 3:00–11:00 — Qualification questions (core of the call)
+
+Ask **only what you need to decide**.
+Do not solve anything.
+
+---
+
+### A. Decision & accountability (mandatory)
+
+1. **Decision**
+
+> What decision would this system support, and what changes if the answer is good?
+
+2. **Accountability**
+
+> Who would remain accountable for outcomes if such a system were used?
+
+If they cannot answer these → no engagement.
+
+---
+
+### B. Risk & failure tolerance (mandatory)
+
+3. **Cost of being wrong**
 
 > What happens if the system gives a confident but incorrect answer?
 
-5. **Refusal design:**
+4. **Unacceptable failure**
 
-> Are there question types where the system should *never* answer and must refuse?
+> Are there answer types that would be unacceptable, even if they are rarely wrong?
 
-6. **Auditability / explainability:**
+5. **Refusal**
 
-> Do you need citations, traceability to documents, or an audit trail?
+> Are there questions the system should never answer and must refuse?
 
-### C) Data reality check (must-have)
-
-7. **Data types:**
-
-> What documents are we talking about (policies, procedures, reports, tickets, emails, contracts, etc.)?
-
-8. **Access constraints:**
-
-> Any restrictions around where the data can be processed (on-prem only, CH/EU cloud only, strict access controls)?
-
-### D) Organizational readiness (nice-to-have)
-
-9. **SME availability:**
-
-> Who are the 2–4 SMEs who could join a structured evaluation workshop?
-
-10. **Success criteria:**
-
-> If we did this well, what would you want to see at the end of 6–8 weeks?
-
-**Your rule:** If they can’t name SMEs or a decision owner, this is not ready.
+If refusal is not acceptable → strong warning sign.
 
 ---
 
-## 11:30–13:30 — Reflect back & frame the fit
+### C. Data & constraints (mandatory)
 
-**You say (summarize in 20–30 seconds):**
+6. **Document reality**
 
-> Let me reflect back what I heard:
-> You want to support [DECISION] for [USERS], using [DATA], with constraints around [GOV/SEC], and the main risk is [RISK]. Is that accurate?
+> What types of documents would the system rely on?
 
-Then:
+7. **Constraints**
 
-**If fit is good:**
-
-> This sounds like a good fit for an evaluation-first assessment. The next step would be a structured SME workshop to define acceptance criteria, failure modes, and an initial evaluation set.
-
-**If fit is weak:**
-
-> Based on what you described, I’m not sure this is the right time to build anything yet. The missing piece is [SMEs / data access / decision ownership]. If you address that, we can revisit.
+> Are there constraints around where data can be processed or who can access it?
 
 ---
 
-## 13:30–15:00 — Close with a concrete next step
+### D. Organizational readiness (mandatory)
 
-### Option 1: Schedule the SME Evaluation Workshop (best)
+8. **SMEs**
+
+> Who are the 2–4 Subject Matter Experts who could define acceptance criteria and failure modes?
+
+9. **Decision owner**
+
+> Who would make the final decision to proceed, iterate, or stop?
+
+If SMEs or decision owner are missing → do not proceed.
+
+---
+
+## 11:00–13:00 — Reflect & qualify out loud
+
+**You say (paraphrase, but be crisp):**
+
+> Let me reflect what I heard:
+> You’re looking to support **[decision]**, the main risk is **[risk]**, the data is **[type]**, and governance constraints include **[constraint]**.
+>
+> Based on that, this **does / does not** sound like a good fit for an evaluation-first assessment.
+
+Say *does not* if needed.
+This is where trust is built.
+
+---
+
+## 13:00–15:00 — Close with one of three outcomes
+
+---
+
+### Outcome A — Proceed to SME Evaluation Workshop (preferred)
 
 **You say:**
 
-> If you’re open to it, I suggest a 90–120 minute workshop with 2–4 SMEs and a process owner.
-> Pre-work is light: 5–10 sample documents and 5–10 real questions people ask today.
-> After the workshop, I can confirm scope and deliverables precisely.
+> The appropriate next step would be a **structured SME Evaluation Workshop**.
+>
+> It takes 90–120 minutes and results in domain-specific acceptance criteria and an initial evaluation dataset.
+>
+> SME involvement is typically **2–4 hours total**.
+>
+> If that sounds reasonable, I can outline the workshop and confirm scope.
 
-### Option 2: Request a small data sample first (when access is unclear)
+---
+
+### Outcome B — Pause (insufficient readiness)
 
 **You say:**
 
-> If workshop scheduling is hard right now, we can start with a small document sample and a question list. I’ll review it and propose a workshop agenda tailored to your domain.
+> At the moment, the missing piece is **[SMEs / decision owner / data access]**.
+>
+> Without that, any work would likely turn into a demo without evaluation rigor.
+>
+> If that changes, I’d be happy to revisit.
 
-### Option 3: Decline politely (protect your time)
+This saves you time and reputation.
+
+---
+
+### Outcome C — Decline (hard no)
 
 **You say:**
 
-> I don’t want to waste your time. Without [SME availability / data access / decision owner], this will likely become a demo without evaluation rigor. If you can align those pieces, I’d be happy to pick it up again.
+> Based on what you described, this engagement would not be appropriate.
+>
+> My work is intentionally conservative and not designed for rapid experimentation or deployment.
+>
+> I don’t want to create false expectations.
+
+This will *increase* respect, not reduce it.
 
 ---
 
-# What you do NOT say (common traps)
+## If asked about tooling (Evaluizer) — 20 seconds max
 
-* Don’t promise “95% accuracy” or any number.
-* Don’t say “we’ll eliminate hallucinations.”
-* Don’t say “enterprise-grade” unless asked; show it via method.
-* Don’t offer operations, uptime, maintenance.
-* Don’t discuss tools/models early (Evaluizer, embeddings, etc.) unless they ask.
+**You say (verbatim):**
 
----
+> An evaluation interface is used during the engagement and handed over so internal teams can continue evaluation independently.
+>
+> Tooling is secondary — evaluation criteria come first.
 
-# If they ask about Evaluizer (30-second answer)
-
-**You say:**
-
-> I use an evaluation interface so SMEs can review outputs against an evaluation dataset, annotate results, and run repeatable checks over time.
-> It makes the evaluation process concrete and helps internal teams continue evaluation after the engagement.
-
-*(Stop there. Offer a demo later, not now.)*
+Then stop.
 
 ---
 
-# Quick red flags (end early if 2+ occur)
+## What you must NOT say (ever)
 
-* “We just want a chatbot quickly”
-* No SME time available
-* No data access path
-* No clear decision owner
-* They want production deployment + support from you
-* They insist on vendor-like guarantees
+* No accuracy numbers
+* No “we reduce hallucinations”
+* No “enterprise-grade” buzzwords
+* No model or architecture talk
+* No promises about outcomes
+
+If asked, redirect to evaluation.
 
 ---
 
-# Success criteria for this call (internal)
+## Red flags (end early if ≥2)
 
-* ✅ Identified decision owner + SMEs
-* ✅ Understood risk tolerance and refusal needs
-* ✅ Confirmed data types + constraints
-* ✅ Agreed next step: SME workshop (preferred) or data sample review
+* “We just want something quick”
+* No SME availability
+* No decision owner
+* Resistance to refusal design
+* Expectation of production deployment
+* Tool-first mindset
+
+---
+
+## Success criteria for this call (internal)
+
+* Decision owner identified
+* SMEs identified
+* Risk tolerance understood
+* Constraints explicit
+* Clear next step chosen
+
+If these are not met → do not proceed.
 
 ---
