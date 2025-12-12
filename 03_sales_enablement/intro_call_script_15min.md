@@ -1,235 +1,153 @@
 
 ---
 
-# 15-Minute Intro Call Script
+# 15-Minute Intro Call
 
-## Evaluation-First Knowledge System Assessment & Prototype
-
-**FINAL – Canonical Version**
+## Independent AI Risk & Readiness Audit
 
 ---
 
-## Objective of the call (internal)
+## Purpose of the call (internal)
 
-This call has **one purpose**:
+* Qualify whether this is an **assurance problem**, not an implementation request
+* Confirm decision ownership and accountability
+* Decide whether a **Risk & Safety Workshop** makes sense
+* Disqualify politely but firmly if it does not
 
-> Determine whether an **evaluation-first assessment** is appropriate — and if so, whether to proceed to an SME Evaluation Workshop.
+This call is **not**:
 
-This is **not** a sales pitch.
-This is a **fit check**.
-
----
-
-## Tone & posture
-
-* Calm
-* Structured
-* Conservative
-* No hype
-* No promises
-
-If you sound excited, you’re doing it wrong.
+* solution design
+* technical troubleshooting
+* vendor comparison
+* brainstorming
 
 ---
 
-## 0:00–1:00 — Opening & framing
+## Structure (15 minutes total)
 
-**You say (verbatim):**
-
-> Thanks for taking the time.
->
-> To keep this useful, I suggest a simple structure:
-> I’ll briefly explain how I work (about two minutes), then I’ll ask a few questions about your context, and we’ll end with a clear next step.
->
-> Does that work for you?
-
-If they say no → already a warning sign.
+```
+0–2 min   Context & role framing
+2–6 min   Decision & risk framing
+6–10 min  Current state & concern
+10–13 min Fit check & boundaries
+13–15 min Clear next step or stop
+```
 
 ---
 
-## 1:00–3:00 — What you do (locked wording)
+## 0–2 min — Role framing (set the tone)
 
-**You say (verbatim):**
+> “Before we start, a quick clarification of my role so we don’t waste each other’s time.
+> I work as an **independent assessor**. I don’t build or implement AI systems.
+> My job is to assess whether a system is safe, defensible, and appropriate to deploy in your context.”
 
-> I work on **evaluation-first AI-assisted knowledge systems**.
->
-> The focus is not on building chatbots or pilots, but on defining **acceptance criteria, failure modes, and decision risk** before any system is deployed.
->
-> The outcome of my work is a clear recommendation to **proceed, iterate, or stop**, based on evidence — not a production system.
+> “If you’re looking for someone to build or tune a system, I’m probably not the right person.
+> If you’re looking for an independent risk and readiness assessment, then this is exactly what I do.”
 
-Stop here.
-Do **not** elaborate unless asked.
+*(Pause. Let them react.)*
 
 ---
 
-## 3:00–11:00 — Qualification questions (core of the call)
+## 2–6 min — Decision & accountability framing
 
-Ask **only what you need to decide**.
-Do not solve anything.
+Ask **one** of the following (pick what fits):
 
----
+* “What decision are you ultimately trying to make about this AI system?”
+* “Who will be accountable if this system produces an unacceptable outcome?”
+* “What would ‘getting this wrong’ look like for your organization?”
 
-### A. Decision & accountability (mandatory)
-
-1. **Decision**
-
-> What decision would this system support, and what changes if the answer is good?
-
-2. **Accountability**
-
-> Who would remain accountable for outcomes if such a system were used?
-
-If they cannot answer these → no engagement.
+**Listen carefully.**
+If there is no clear decision or owner, note it mentally.
 
 ---
 
-### B. Risk & failure tolerance (mandatory)
+## 6–10 min — Current state & concern
 
-3. **Cost of being wrong**
+> “What prompted this conversation now?”
 
-> What happens if the system gives a confident but incorrect answer?
+Follow-ups (only if needed):
 
-4. **Unacceptable failure**
+* “Is there already a prototype or vendor involved?”
+* “What makes you uneasy about the current situation?”
+* “Has Legal, Compliance, or Security raised concerns?”
 
-> Are there answer types that would be unacceptable, even if they are rarely wrong?
+**Red flags (disqualifiers):**
 
-5. **Refusal**
+* “We just want to experiment”
+* “We’ll worry about risk later”
+* “We want a rubber stamp”
 
-> Are there questions the system should never answer and must refuse?
-
-If refusal is not acceptable → strong warning sign.
-
----
-
-### C. Data & constraints (mandatory)
-
-6. **Document reality**
-
-> What types of documents would the system rely on?
-
-7. **Constraints**
-
-> Are there constraints around where data can be processed or who can access it?
+Do not argue. Just note.
 
 ---
 
-### D. Organizational readiness (mandatory)
+## 10–13 min — Fit check & boundaries
 
-8. **SMEs**
+> “For my work to be useful, two things need to be true.”
 
-> Who are the 2–4 Subject Matter Experts who could define acceptance criteria and failure modes?
+> “First, there must be **someone who owns the decision** — not just the technology.”
+> “Second, we need **limited access to Subject Matter Experts** to define what acceptable behavior actually means.”
 
-9. **Decision owner**
+> “Does that sound feasible in your organization?”
 
-> Who would make the final decision to proceed, iterate, or stop?
-
-If SMEs or decision owner are missing → do not proceed.
-
----
-
-## 11:00–13:00 — Reflect & qualify out loud
-
-**You say (paraphrase, but be crisp):**
-
-> Let me reflect what I heard:
-> You’re looking to support **[decision]**, the main risk is **[risk]**, the data is **[type]**, and governance constraints include **[constraint]**.
->
-> Based on that, this **does / does not** sound like a good fit for an evaluation-first assessment.
-
-Say *does not* if needed.
-This is where trust is built.
+If **no** → politely disengage.
+If **yes** → proceed.
 
 ---
 
-## 13:00–15:00 — Close with one of three outcomes
+## 13–15 min — Next step or stop
+
+### If there is a fit
+
+> “The usual next step is a **Risk & Safety Workshop**.
+> It’s a time-boxed session where we define acceptance criteria, failure modes, and refusal rules.”
+
+> “The output is not a system design, but clarity on whether further assessment makes sense — or whether the safest decision is to stop.”
+
+> “Would it make sense to explore that?”
 
 ---
 
-### Outcome A — Proceed to SME Evaluation Workshop (preferred)
+### If there is *not* a fit
 
-**You say:**
+> “Based on what you’ve described, I don’t think my role would add much value right now.
+> That’s not a problem — it just means you may need implementation support before independent assessment becomes useful.”
 
-> The appropriate next step would be a **structured SME Evaluation Workshop**.
->
-> It takes 90–120 minutes and results in domain-specific acceptance criteria and an initial evaluation dataset.
->
-> SME involvement is typically **2–4 hours total**.
->
-> If that sounds reasonable, I can outline the workshop and confirm scope.
+This preserves authority.
 
 ---
 
-### Outcome B — Pause (insufficient readiness)
+## Notes for yourself (do not say out loud)
 
-**You say:**
-
-> At the moment, the missing piece is **[SMEs / decision owner / data access]**.
->
-> Without that, any work would likely turn into a demo without evaluation rigor.
->
-> If that changes, I’d be happy to revisit.
-
-This saves you time and reputation.
+* You are **not selling AI**
+* You are **screening for risk maturity**
+* Silence is your ally
+* If they push for solutions, repeat your role framing
 
 ---
 
-### Outcome C — Decline (hard no)
+## Success criteria for the call
 
-**You say:**
+The call is successful if:
 
-> Based on what you described, this engagement would not be appropriate.
->
-> My work is intentionally conservative and not designed for rapid experimentation or deployment.
->
-> I don’t want to create false expectations.
+* a workshop is booked, **or**
+* you clearly decide not to proceed
 
-This will *increase* respect, not reduce it.
+A “no” is a win if it saves you a bad engagement.
 
 ---
 
-## If asked about tooling (Evaluizer) — 20 seconds max
+### Mentor note (important)
 
-**You say (verbatim):**
+This script now does three subtle but powerful things:
 
-> An evaluation interface is used during the engagement and handed over so internal teams can continue evaluation independently.
->
-> Tooling is secondary — evaluation criteria come first.
+1. It **normalizes refusal** from the first minute
+2. It reframes value as **decision safety**, not delivery
+3. It filters out clients who would later cause scope creep
 
-Then stop.
+Once the proposal template is aligned, we can do **micro-edits** across all documents in one pass.
 
----
+**Next document to rewrite (medium effort):**
+👉 `proposal_template_1pager.md`
 
-## What you must NOT say (ever)
-
-* No accuracy numbers
-* No “we reduce hallucinations”
-* No “enterprise-grade” buzzwords
-* No model or architecture talk
-* No promises about outcomes
-
-If asked, redirect to evaluation.
-
----
-
-## Red flags (end early if ≥2)
-
-* “We just want something quick”
-* No SME availability
-* No decision owner
-* Resistance to refusal design
-* Expectation of production deployment
-* Tool-first mindset
-
----
-
-## Success criteria for this call (internal)
-
-* Decision owner identified
-* SMEs identified
-* Risk tolerance understood
-* Constraints explicit
-* Clear next step chosen
-
-If these are not met → do not proceed.
-
----
+Say *continue* and we’ll do that next.

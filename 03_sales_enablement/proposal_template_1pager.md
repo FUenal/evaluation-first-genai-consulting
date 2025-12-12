@@ -1,210 +1,174 @@
+Good. This is the **last heavy rewrite**. After this, we switch to **micro-edits only**.
+
+Below is a **fully rewritten, audit-grade proposal template**, aligned with:
+
+* the **Independent AI Assurance** archetype
+* Swiss procurement and governance expectations
+* the “Proceed · Iterate · Stop” decision logic
+* fixed-scope, time-boxed reality
+* your independence and conflict-of-interest constraints
+
+Paste this as a complete replacement for
+`03_sales_enablement/proposal_template_1pager.md`.
 
 ---
 
 # Proposal
 
-## Evaluation-First Knowledge System Assessment & Prototype
+## Independent AI Risk & Readiness Audit
 
-**Client:** [Organization name]
-**Prepared for:** [Decision owner / unit]
+**Client:** [Organization Name]
 **Prepared by:** Fatih Ünal
+**Role:** Independent AI Assurance Specialist
 **Date:** [Date]
 
 ---
 
-## 1. Context & objective
+## 1. Purpose of this engagement
 
-[Organization] is exploring the use of an **AI-assisted knowledge system** to support decisions related to:
+The purpose of this engagement is to provide an **independent, evidence-based assessment** of whether a proposed or existing AI-assisted knowledge system is:
 
-* **Decisions supported:** [short description]
-* **Primary users:** [roles / functions]
-* **Primary risk:** [e.g. incorrect, incomplete, or misleading answers]
+* safe to use in its intended context
+* defensible from a governance and risk perspective
+* appropriate to deploy given organizational accountability and regulatory exposure
 
-The objective of this engagement is **not to deploy a production system**, but to determine **whether such a system can be trusted in this domain**, and under which constraints.
-
----
-
-## 2. Why an evaluation-first approach
-
-Most GenAI initiatives fail not because models are weak, but because **success and failure are never defined in a way that reflects real organizational risk**.
-
-As a result:
-
-* unacceptable errors are discovered late
-* refusal and uncertainty are not designed
-* systems perform well in demos but fail in practice
-
-This engagement is based on a single principle:
-
-> **If a system cannot be meaningfully evaluated in its domain context, it should not be deployed.**
+This engagement is **not** intended to design, build, or optimize an AI system.
+Its sole purpose is to support a **defensible decision**.
 
 ---
 
-## 3. Scope of the engagement (6–8 weeks)
+## 2. Scope of assessment
 
-The engagement is a **fixed-scope, time-boxed assessment** structured around evaluation before implementation.
+The audit will focus on the following areas:
 
----
+### 2.1 Domain & risk framing
 
-### 3.1 Use-case & risk framing
+* clarification of the decision the system would support
+* identification of accountability and decision ownership
+* articulation of unacceptable outcomes
 
-We clarify:
+### 2.2 SME-defined acceptance criteria
 
-* which decisions the system would support
-* who remains accountable for outcomes
-* what constitutes unacceptable vs tolerable failure
-* where the system must refuse to answer
+* definition of what constitutes acceptable behavior
+* identification of intolerable failure modes
+* explicit refusal and abstention conditions
 
-**Deliverable**
-Problem & risk framing document
+### 2.3 Failure taxonomy & behavioral risk
 
----
+* classification of relevant failure types (e.g. hallucination, omission, overconfidence)
+* assessment of severity and decision impact
 
-### 3.2 Data & governance readiness
+### 2.4 Evaluation & evidence
 
-We assess:
+* structured inspection of system behavior (where applicable)
+* review of evaluation artifacts or test scenarios
+* identification of irreducible risks
 
-* document types and structure
-* sensitivity and access constraints
-* audit and governance requirements
-* data gaps and no-go signals
+### 2.5 Governance & regulatory exposure
 
-A recommendation **not to proceed** is considered a valid outcome.
-
-**Deliverable**
-Data readiness & governance memo
-
----
-
-### 3.3 Joint evaluation & system design (with SMEs)
-
-In structured working sessions, **Subject Matter Experts co-define**:
-
-* domain-specific acceptance criteria
-* failure modes and refusal rules
-* evaluation datasets reflecting real decision risk
-
-Evaluation design precedes system optimization.
-
-**Deliverables**
-
-* Evaluation design document
-* SME-validated evaluation dataset
+* high-level review of governance readiness
+* identification of regulatory or policy gaps
+* decision-relevant risk flags (non-certifying)
 
 ---
 
-### 3.4 Evaluation-guided prototype
+## 3. Explicit exclusions
 
-A limited-scope prototype is implemented as an **instrumented test harness**, not a production system.
+To preserve independence and clarity of responsibility, this engagement **explicitly excludes**:
 
-It is used to:
+* system implementation or deployment
+* model or prompt tuning
+* production operation or monitoring
+* legal certification or compliance sign-off
 
-* run evaluations against agreed criteria
-* inspect failure modes and trade-offs
-* identify irreducible risks
-
-**Deliverables**
-
-* Instrumented prototype
-* Evaluation report with failure analysis
+Any recommendations provided are **advisory**, not guarantees.
 
 ---
 
-### 3.5 Decision memo
+## 4. Method of work
 
-The engagement concludes with a structured recommendation to:
+The engagement is conducted as a **time-boxed audit** combining:
 
-> **Proceed · Iterate · Stop**
+* limited synchronous sessions (workshop / interviews)
+* asynchronous analysis and documentation
+* structured use of evaluation and classification instruments
 
-**Deliverable**
-Decision memo suitable for management and governance review
-
----
-
-## 4. Engagement success criteria
-
-This engagement is successful if, at the end of the assessment, the organization has:
-
-* a documented evaluation framework grounded in domain risk
-* a prototype tested against SME-defined acceptance criteria
-* a clear, defensible decision to proceed, iterate, or stop
-
-No production deployment is required for success.
+Delays in client data access or availability **do not extend** the engagement duration.
 
 ---
 
-## 5. Evaluation infrastructure & continuity
+## 5. Deliverables
 
-An evaluation interface based on **Evaluizer** is used during the engagement and handed over so internal teams can continue evaluation independently.
+Depending on the agreed scope, deliverables may include:
 
-This enables:
+* an audit memo summarizing findings and risk posture
+* a documented risk map and failure taxonomy
+* evidence excerpts supporting conclusions
+* a clear, written recommendation for decision owners
 
-* transparent inspection of system behavior
-* repeatable evaluation over time
-* regression detection as data or prompts change
+All deliverables are designed to be:
 
-No vendor lock-in is introduced.
-
----
-
-## 6. Roles & time commitment
-
-**Client provides**
-
-* access to representative documents
-* availability of **2–4 Subject Matter Experts**
-* one decision owner for scoping and sign-off
-
-**Time commitment**
-
-* SME involvement is typically limited to **2–4 hours total**, primarily through a structured evaluation workshop
-
-**Consultant provides**
-
-* evaluation-first methodology
-* facilitation of SME workshops
-* prototype and evaluation artifacts
-* independent recommendation
+* internally reusable
+* suitable for governance discussions
+* independent of specific vendors
 
 ---
 
-## 7. Engagement model
+## 6. Possible outcomes
 
-* Fixed scope
-* Fixed duration (6–8 weeks)
-* Limited number of concurrent clients
-* No production deployment
-* No ongoing operational responsibility
+The engagement will conclude with one of the following recommendations:
 
-**This engagement is intentionally conservative and is not designed for rapid experimentation or production deployment.**
+* **Proceed** — risks are bounded and acceptable
+* **Iterate** — risks exist but may be reducible
+* **Stop** — risks are unacceptable in the current context
 
----
-
-## 8. Independence & IP
-
-All work is conducted independently and uses only client-provided or publicly available materials.
-No confidential or proprietary information of third parties is reused or derived.
+A recommendation to **stop** is considered a **successful outcome** if it prevents foreseeable harm.
 
 ---
 
-## 9. If the recommendation is to stop
+## 7. Independence & conflict-of-interest
 
-If the recommendation is not to proceed, **all evaluation artifacts, decision frameworks, and findings remain usable** for future initiatives, audits, or internal reviews.
+Fatih Ünal acts solely as an **independent assessor**.
 
-Stopping is treated as a valid and valuable outcome.
+He does not:
 
----
+* implement systems arising from this assessment
+* accept compensation tied to deployment outcomes
+* act as a vendor or solution provider
 
-## 10. Commercials
-
-**Fee:** CHF [XX’000] (fixed)
-**Payment terms:** [e.g. 50% start / 50% end]
-**Start date:** [date]
+This independence is a core feature of the engagement.
 
 ---
 
-## 11. Next step
+## 8. Engagement parameters
 
-Upon confirmation, the engagement starts with scheduling the **SME Evaluation Workshop**, followed by document review and detailed planning.
+* **Duration:** [e.g. 2–6 weeks, depending on scope]
+* **Format:** Fixed scope, fixed duration
+* **Availability:** Limited synchronous time, scheduled in advance
+* **Fee:** CHF [amount] (excl. VAT), payable [terms]
+
+---
+
+## 9. Next step
+
+If this proposal aligns with your expectations, the recommended next step is to:
+
+1. confirm scope and decision ownership
+2. schedule the initial Risk & Safety Workshop
+
+No work will begin without explicit agreement on scope and boundaries.
+
+---
+
+### Mentor checkpoint (important)
+
+This proposal now:
+
+* reads like an **audit mandate**, not a consulting SOW
+* makes independence legally and psychologically clear
+* protects you from scope creep
+* normalizes “Stop” as an outcome
+
+At this point, **do not rewrite further** unless a real client forces a change.
 
 ---

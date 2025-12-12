@@ -248,83 +248,88 @@ We’ll do it at the same level of rigor as everything else.
 
 ---
 
-# Services (Evaluation-First Version, Publication-Ready)
+# `01_services/services_page.md`
+
+**FINAL – Canonical, Evaluation-First Version**
+
+---
+
+# Services
 
 ## Evaluation-First Knowledge System Assessment & Prototype
 
-### What this service is
+---
 
-I help organizations **design AI-assisted knowledge systems that can be meaningfully evaluated, governed, and trusted before they are deployed**.
+## What this service is
 
-Most GenAI initiatives fail not because the models are weak, but because *success is never defined in a way that reflects real organizational risk*. This service addresses that gap by placing **evaluation and decision quality** at the center of system design.
+I help organizations design **evaluation-first AI-assisted knowledge systems** that can be meaningfully evaluated, governed, and trusted **before deployment**.
 
-The outcome is not a demo chatbot, but a **clear, evidence-based decision** on whether such a system should exist in your context — and under what constraints.
+The focus is not on building chatbots or pilots, but on defining **acceptance criteria, failure modes, and decision risk** before any system is operationalized.
+
+The outcome is a **clear, evidence-based decision** on whether such a system should exist in your context — and under what constraints.
 
 ---
 
-### Why this approach
+## The problem this service addresses
 
-Industry experience shows that the majority of GenAI pilots fail in production due to:
+Most GenAI initiatives fail not because models are weak, but because **success and failure are never defined in a way that reflects real organizational risk**.
 
-* undefined or implicit success criteria
-* lack of domain-specific evaluation data
-* no error taxonomy or acceptance thresholds
-* inability to reason about failure modes
-* missing human-in-the-loop design
+As a result:
 
-This service is built around the opposite principle:
+* systems perform well in demos but fail in real use
+* unacceptable errors are discovered too late
+* refusal and uncertainty are not designed
+* trust erodes quickly
 
-> **If a system cannot be evaluated in a way that reflects domain risk, it should not be deployed.**
+This service is built on the opposite principle:
+
+> **If a system cannot be meaningfully evaluated in its domain context, it should not be deployed.**
 
 ---
 
-### Who this service is for
+## Who this service is for
 
 This service is suited for organizations where:
 
-* decisions depend on complex internal documents or policies
-* incorrect answers have legal, financial, or reputational consequences
-* AI systems must be auditable and explainable
-* data use is constrained by regulation or governance
-* there is pressure to “use GenAI”, but uncertainty about how to do so responsibly
+* decisions depend on complex internal documents
+* incorrect or misleading answers have legal, financial, or reputational consequences
+* explainability, auditability, and governance matter
+* data usage is constrained by regulation or policy
 
-Typical contexts include public institutions, regulated organizations, NGOs, and research-driven environments.
+Typical contexts include regulated organizations, public institutions, NGOs, and research-driven environments.
 
 ---
 
-### Who this service is *not* for
+## Who this service is not for
 
-This service is not intended for organizations seeking:
+This service is **not** intended for organizations seeking:
 
-* a ready-made SaaS chatbot
-* customer support or sales automation
-* real-time or mission-critical AI systems
-* rapid prototyping without evaluation rigor
-* ongoing system operations or maintenance
+* a ready-made SaaS product
+* customer support or sales chatbots
+* rapid experimentation or demo-driven pilots
+* real-time or mission-critical systems
+* ongoing system operation or maintenance
 
 If speed matters more than correctness, this engagement is not a good fit.
 
 ---
 
-## Scope & approach (Evaluation-first)
+## Scope & approach (evaluation-first)
 
-The engagement is structured as a **time-boxed assessment and prototype**, typically over **6–8 weeks**, and is organized around evaluation rather than implementation speed.
+The engagement is structured as a **fixed-scope, time-boxed assessment** (typically **6–8 weeks**) and follows a strict evaluation-first sequence.
 
 ---
 
 ### 1. Use-case & risk framing
 
-We begin by clarifying:
+We clarify:
 
 * which decisions the system would support
-* what constitutes a *wrong* or *unacceptable* answer
-* which failure modes are tolerable vs unacceptable
-* where the system must refuse to answer
 * who remains accountable for outcomes
+* what constitutes unacceptable vs tolerable failure
+* where the system must refuse to answer
 
-This step anchors the entire evaluation design.
-
-**Deliverable:**
+**Deliverable**
 Problem & risk framing document
 
 ---
@@ -335,85 +340,86 @@ We assess:
 
 * document types and structure
 * sensitivity and access constraints
-* data quality and coverage gaps
-* governance and audit requirements
+* audit and governance requirements
+* data gaps and no-go signals
 
-This step often surfaces reasons *not* to proceed — which is considered a valid outcome.
+A recommendation **not to proceed** is considered a valid outcome.
 
-**Deliverable:**
-Data readiness & governance memo (including go / no-go signals)
+**Deliverable**
+Data readiness & governance memo
 
 ---
 
 ### 3. Joint evaluation & system design (with SMEs)
 
-This is the core differentiator of the engagement.
+This is the core of the engagement.
 
-In structured working sessions with Subject Matter Experts and process owners, we jointly design:
+In structured working sessions, **Subject Matter Experts co-define**:
 
-* task-specific evaluation datasets
-* domain-relevant success and failure criteria
-* error taxonomies (hallucination, omission, ambiguity, outdated information, etc.)
-* acceptance thresholds aligned to organizational risk
-* human-in-the-loop and override rules
+* domain-specific acceptance criteria
+* failure modes and refusal rules
+* evaluation datasets reflecting real decision risk
 
 Evaluation design precedes system optimization.
 
-**Deliverables:**
+**Deliverables**
 
 * Evaluation design document
-* Initial SME-validated evaluation set
+* SME-validated evaluation dataset
 
 ---
 
 ### 4. Evaluation-guided prototype
 
-A limited-scope prototype is implemented **as a test harness**, not as a production system.
+A limited-scope prototype is implemented as an **instrumented test harness**, not a production system.
 
-The prototype is instrumented to:
+It is used to:
 
-* run batch evaluations
-* inspect retrieval and answer quality
-* analyze failure modes
-* support regression testing as data or prompts change
+* run evaluations against agreed criteria
+* inspect failure modes and trade-offs
+* identify irreducible risks
 
-The goal is to make failures visible, inspectable, and discussable.
-
-**Deliverables:**
+**Deliverables**
 
 * Instrumented prototype
-* Evaluation report with failure analysis and trade-offs
+* Evaluation report with failure analysis
 
 ---
 
 ### 5. Decision memo
 
-The engagement concludes with a structured decision memo covering:
+The engagement concludes with a structured recommendation to:
 
-* whether the system meets acceptance criteria
-* what would be required to reach them
-* which risks remain irreducible
-* whether to proceed, iterate, or stop
+> **Proceed · Iterate · Stop**
 
-**Deliverable:**
-Decision memo suitable for internal governance and management review
+**Deliverable**
+Decision memo suitable for management and governance review
+
+---
+
+## Engagement success criteria
+
+This engagement is successful if, at the end of the assessment, the organization has:
+
+* a documented evaluation framework grounded in domain risk
+* a prototype tested against SME-defined acceptance criteria
+* a clear, defensible decision to proceed, iterate, or stop
+
+No production deployment is required for success.
 
 ---
 
 ## Evaluation infrastructure & continuity
 
-As part of the engagement, I provide an **evaluation interface and workflow** based on *Evaluizer*, an open-source evaluation framework designed for systematic LLM assessment and optimization.
+An evaluation interface based on **Evaluizer** is used during the engagement and handed over so internal teams can continue evaluation independently.
 
-This allows organizations to:
+This enables:
 
-* visualize model outputs against evaluation datasets
-* manually annotate and review results with SMEs
-* run automated evaluations using deterministic functions and LLM judges
-* track performance over time as prompts, data, or models change
+* transparent inspection of system behavior
+* repeatable evaluation over time
+* regression detection as data or prompts change
 
-The goal is to **reduce fear around long-term maintenance** and enable internal teams to continue evaluation after the engagement ends.
-
-Evaluizer is adapted and configured for the specific use case and handed over as part of the delivery.
+No vendor lock-in is introduced.
 
 ---
 
@@ -425,14 +431,29 @@ Evaluizer is adapted and configured for the specific use case and handed over as
 * No production deployment
 * No ongoing operational responsibility
 
-Engagements are conducted independently using client-provided data and environments, with strict separation from any employer-related activities.
+**This engagement is intentionally conservative and is not designed for rapid experimentation or production deployment.**
+
+---
+
+## Time commitment
+
+* SME involvement is typically limited to **2–4 hours total**, primarily through a structured evaluation workshop
+* One decision owner is required for scoping and sign-off
 
 ---
 
 ## Independence & IP
 
-All engagements use only client-provided or publicly available materials.
-I ensure strict separation from any employer-related activities and do not reuse or derive from confidential or proprietary information of third parties.
+All work is conducted independently and uses only client-provided or publicly available materials.
+No confidential or proprietary information of third parties is reused or derived.
+
+---
+
+## If the recommendation is to stop
+
+If the recommendation is not to proceed, **all evaluation artifacts, decision frameworks, and findings remain usable** for future initiatives, audits, or internal reviews.
+
+Stopping is treated as a valid and valuable outcome.
 
 ---
 
@@ -442,55 +463,451 @@ If you are considering an AI-assisted knowledge system and want to determine **w
 
 ---
 
-# Consultant’s assessment of this positioning
-
-This rewrite does three important things:
-
-1. **Evaluation is no longer a feature — it is the product**
-2. You sell *decision safety*, not model performance
-3. Evaluizer is positioned as **risk-reducing infrastructure**, not a shiny tool
-
-This is exactly how you avoid:
-
-* academic overtones
-* tool-centric selling
-* being mistaken for an “AI dev shop”
 
 ---
 
-# What we do next (as requested)
+# Evaluation-First Principles
 
-Now that the Services page is coherent, the next two artifacts should be:
-
-### Next 1️⃣ SME Workshop Agenda (sales + delivery artifact)
-
-A concrete, 90–120 minute agenda you can:
-
-* attach to proposals
-* walk through in intro calls
-* use to show seriousness without code
-
-### Next 2️⃣ “Why 95% of GenAI Systems Fail” One-Pager
-
-A short, non-technical explainer you can:
-
-* send before first calls
-* use internally with skeptical stakeholders
-* anchor your evaluation-first narrative
-
-Both are **high-leverage** and low effort.
+## How trustworthy AI-assisted knowledge systems are designed
 
 ---
 
-**My recommendation:**
-👉 Next, we design the **SME Evaluation Workshop agenda**, because it makes the service tangible and dramatically increases conversion quality.
+## Principle 1 — Evaluation precedes optimization
 
-If you agree, say:
+AI-assisted knowledge systems must be evaluated **before** they are optimized.
 
-> “Let’s design the SME workshop agenda.”
+In practice, many systems are tuned for fluency or apparent accuracy without a clear definition of what constitutes acceptable behavior. This leads to systems that perform well in demonstrations but fail in real decision contexts.
 
-We’ll do it at the same level of rigor as everything else.
+Experienced practitioners consistently emphasize that **optimization without prior evaluation is meaningless**, because there is no stable reference for improvement [1].
 
+Evaluation therefore acts as the **specification layer** of the system, not a validation step applied at the end.
+
+---
+
+## Principle 2 — Evaluation must be domain-specific
+
+Generic benchmarks and abstract accuracy scores are insufficient for real-world use.
+
+What matters is whether system behavior is acceptable **within a specific domain**, under real constraints, for concrete decisions. Acceptability cannot be inferred from model performance alone.
+
+Applied AI research and industry practice show that **task- and domain-specific evaluation** is required to surface meaningful failure modes and prevent silent errors [2][3].
+
+---
+
+## Principle 3 — Subject Matter Experts define acceptability
+
+Only Subject Matter Experts (SMEs) can define:
+
+* what constitutes an acceptable answer
+* which errors are tolerable
+* which failures are unacceptable regardless of frequency
+
+SMEs are not asked to evaluate model internals.
+They define **decision risk and acceptance criteria**.
+
+Human-in-the-loop and expert-grounded evaluation approaches are widely recognized as necessary in high-stakes and regulated settings, where correctness is contextual rather than purely statistical [3][4].
+
+---
+
+## Principle 4 — Refusal is a designed behavior, not a failure
+
+In many domains, the safest answer is **no answer**.
+
+Systems must be explicitly designed to:
+
+* refuse questions outside their scope
+* abstain when confidence is insufficient
+* signal uncertainty instead of hallucinating
+
+Refusal behavior is a **risk control mechanism**, not a deficiency.
+Leading AI labs emphasize that evaluation must include when and how systems should *not* respond [5].
+
+---
+
+## Principle 5 — Evaluation artifacts are first-class system components
+
+Evaluation artifacts include:
+
+* acceptance criteria
+* evaluation datasets
+* failure taxonomies
+* annotated system behaviors
+
+These artifacts are not temporary scaffolding. They are reusable system components that:
+
+* support governance and audit
+* enable regression detection
+* retain value even if deployment is deferred or canceled
+
+For this reason, evaluation artifacts are treated as **deliverables**, not byproducts.
+
+---
+
+## Principle 6 — Decisions are evidence-based, not aspirational
+
+The purpose of evaluation is not to justify deployment.
+
+The outcome of an evaluation-first process is a structured decision to:
+
+> **Proceed · Iterate · Stop**
+
+All three outcomes are valid.
+Stopping based on evidence is considered a successful outcome.
+
+This principle aligns with emerging best practices in AI governance, which emphasize decision traceability over optimistic experimentation [1][2].
+
+---
+
+## Summary
+
+An evaluation-first approach shifts AI system design from:
+
+* model-centric thinking
+* demo-driven validation
+* post-hoc risk discovery
+
+to:
+
+* domain-anchored evaluation
+* explicit failure design
+* evidence-based deployment decisions
+
+This discipline is what separates AI systems that merely impress from systems that can be trusted.
+
+---
+
+## References
+
+[1] Hamel Husain — *Evals Before Optimization*
+[https://hamel.dev/blog/posts/evals-faq/](https://hamel.dev/blog/posts/evals-faq/)
+
+[2] Anthropic — *A Statistical Approach to Model Evaluations*
+[https://www.anthropic.com/research/statistical-approach-to-model-evals](https://www.anthropic.com/research/statistical-approach-to-model-evals)
+
+[3] Eugene Yan — *Productizing Machine Learning* / *ML System Failure Modes*
+[https://eugeneyan.com/writing/](https://eugeneyan.com/writing/)
+
+[4] Stanford Human-Centered AI — Evaluation in High-Stakes Domains
+[https://hai.stanford.edu/research](https://hai.stanford.edu/research)
+
+[5] OpenAI — Evaluation & System Behavior Guidance
+[https://platform.openai.com/docs/guides/evals](https://platform.openai.com/docs/guides/evals)
+
+---
+
+---
+
+# Failure Taxonomy
+
+## How unacceptable system behavior is identified, classified, and evaluated
+
+---
+
+## Purpose of this document
+
+This document defines a **failure taxonomy** for evaluation-first AI-assisted knowledge systems.
+
+The taxonomy serves three purposes:
+
+1. Provide a **shared vocabulary** for SMEs, engineers, and decision owners
+2. Enable **systematic evaluation** beyond generic accuracy metrics
+3. Support **governance, audit, and decision traceability**
+
+Failures are not treated as bugs to be hidden, but as **signals that determine whether deployment is acceptable**.
+
+---
+
+## Core principle
+
+> A system does not fail when it is wrong.
+> A system fails when it behaves **unacceptably for its domain and risk context**.
+
+This taxonomy is therefore **domain-agnostic in structure**, but **domain-specific in application**.
+
+---
+
+## Failure categories (canonical)
+
+All system failures must be classified into **exactly one primary category**.
+Secondary categories may be noted, but one must dominate.
+
+---
+
+## 1. Hallucination
+
+**Category:** Critical
+
+### Definition
+
+The system produces information that is **not supported by the provided documents** or invents facts, entities, or relationships.
+
+### Why this matters
+
+Hallucination erodes trust immediately and is often indistinguishable from correct answers for non-expert users.
+
+### Examples
+
+* Citing a regulation that does not exist
+* Inventing a policy clause
+* Attributing statements to documents that do not contain them
+
+### Evaluation rule
+
+* **Always unacceptable** in high-stakes or regulated contexts
+* Requires explicit detection and mitigation
+
+---
+
+## 2. Unsupported inference
+
+**Category:** Critical
+
+### Definition
+
+The system draws conclusions that are **not explicitly supported** by the source material, even if they sound plausible.
+
+### Why this matters
+
+This is more subtle than hallucination and often goes unnoticed.
+
+### Examples
+
+* Inferring intent or legal meaning not stated in the text
+* Combining unrelated facts into a new conclusion
+
+### Evaluation rule
+
+* Typically unacceptable
+* SMEs must decide whether bounded inference is ever permitted
+
+---
+
+## 3. Omission
+
+**Category:** High
+
+### Definition
+
+The system provides an answer that is technically correct but **misses critical information** required for a safe or complete decision.
+
+### Why this matters
+
+Partial answers can be more dangerous than incorrect ones.
+
+### Examples
+
+* Summarizing a policy while omitting key exceptions
+* Answering a procedural question without mentioning mandatory approvals
+
+### Evaluation rule
+
+* Often unacceptable in decision-support contexts
+* Acceptability depends on domain and task
+
+---
+
+## 4. Overconfidence
+
+**Category:** High
+
+### Definition
+
+The system presents uncertain or ambiguous information with **unwarranted confidence**.
+
+### Why this matters
+
+Users tend to trust confident language, even when uncertainty should be explicit.
+
+### Examples
+
+* Definitive answers where documents are ambiguous
+* Failure to signal uncertainty or assumptions
+
+### Evaluation rule
+
+* Unacceptable when uncertainty materially affects decisions
+* Must be paired with uncertainty signaling or refusal
+
+---
+
+## 5. Refusal failure
+
+**Category:** Critical
+
+### Definition
+
+The system answers a question that it **should have refused** based on scope, confidence, or policy constraints.
+
+### Why this matters
+
+This is a design failure, not a model limitation.
+
+### Examples
+
+* Answering questions outside the document corpus
+* Responding to requests requiring human judgment or authority
+
+### Evaluation rule
+
+* Always unacceptable
+* Refusal behavior must be explicitly tested
+
+---
+
+## 6. Over-refusal
+
+**Category:** Medium
+
+### Definition
+
+The system refuses to answer questions it **should be able to answer** safely and correctly.
+
+### Why this matters
+
+Excessive refusal degrades usability and trust.
+
+### Examples
+
+* Refusing clearly supported factual questions
+* Overly conservative abstention
+
+### Evaluation rule
+
+* Acceptable during early iterations
+* Must be monitored and reduced deliberately
+
+---
+
+## 7. Misalignment with domain norms
+
+**Category:** Medium
+
+### Definition
+
+The system produces answers that are factually correct but **inappropriate in tone, framing, or interpretation** for the domain.
+
+### Why this matters
+
+Domain norms encode risk, responsibility, and professionalism.
+
+### Examples
+
+* Legal answers phrased as informal advice
+* Policy interpretations framed as recommendations
+
+### Evaluation rule
+
+* SMEs define acceptability
+* Often unacceptable in formal or regulated settings
+
+---
+
+## 8. Source attribution failure
+
+**Category:** High
+
+### Definition
+
+The system fails to correctly reference or attribute the source material used in its answer.
+
+### Why this matters
+
+Traceability is essential for audit, trust, and verification.
+
+### Examples
+
+* Missing citations
+* Incorrect document references
+* Blended sources without distinction
+
+### Evaluation rule
+
+* Often unacceptable where auditability is required
+
+---
+
+## Severity mapping (guidance)
+
+| Category                   | Typical Severity |
+| -------------------------- | ---------------- |
+| Hallucination              | Critical         |
+| Unsupported inference      | Critical         |
+| Refusal failure            | Critical         |
+| Omission                   | High             |
+| Overconfidence             | High             |
+| Source attribution failure | High             |
+| Misalignment with norms    | Medium           |
+| Over-refusal               | Medium           |
+
+Final severity classification is **domain-dependent** and decided by SMEs.
+
+---
+
+## How this taxonomy is used in evaluation
+
+During evaluation:
+
+* Each answer is annotated with:
+
+  * failure category (if any)
+  * severity
+  * short SME comment
+* Aggregated results reveal:
+
+  * dominant failure modes
+  * irreducible risks
+  * suitability for deployment
+
+This enables **transparent trade-off analysis**, not binary pass/fail scoring.
+
+---
+
+### Operationalization note
+
+This failure taxonomy defines *what* constitutes unacceptable behavior.  
+How failures are recorded, annotated, and aggregated is described separately in the evaluation methodology and tooling documentation.
+
+The taxonomy is intentionally tool-agnostic.
+
+---
+
+## Governance & audit relevance
+
+This taxonomy:
+
+* supports explainable deployment decisions
+* documents why a system was approved, constrained, or rejected
+* provides evidence for internal and external audits
+
+Failure classification is therefore a **governance artifact**, not a technical detail.
+
+---
+
+## Summary
+
+A trustworthy AI-assisted knowledge system is not defined by how often it answers correctly, but by **how it fails**.
+
+This taxonomy ensures failures are:
+
+* visible
+* classified
+* discussed
+* and designed against
+
+Without it, evaluation degenerates into anecdote.
+
+---
+
+## Related documents
+
+This taxonomy is used in conjunction with:
+
+- `evaluation_first_principles.md` — conceptual foundation of evaluation-first design  
+- `sme_workshop_agenda.md` — how SMEs define acceptance criteria and failure modes  
+- `evaluation_design_framework.md` — how evaluation datasets and criteria are constructed  
+- `evaluizer_overview.md` — tooling used to operationalize evaluation during the engagement
+
+---
 ---
 
 # 1️⃣ SME Evaluation Workshop Agenda
@@ -682,6 +1099,321 @@ From a consultant’s perspective:
 * it demonstrates rigor immediately
 * it reframes GenAI as a governance problem
 * it positions you as a facilitator of judgment, not a tool builder
+
+---
+# Grounding References
+**Selective external grounding for evaluation-first claims**
+
+This document maps **core claims** of the evaluation-first offering to **external practitioner and institutional sources**.  
+References are used only where a senior stakeholder would reasonably challenge a claim as opinion.
+
+The goal is credibility, not exhaustiveness.
+
+---
+
+## Claim 1  
+### Most GenAI initiatives fail to translate from pilots to measurable business impact
+
+**Why grounding is needed**  
+Senior stakeholders will challenge “most fail” unless it is tied to credible institutions.
+
+**Primary sources (institutional)**
+- MIT NANDA / Project NANDA report (“The GenAI Divide: State of AI in Business 2025”) reporting that *95% of organizations are getting zero return* and highlighting that outcomes are driven by approach rather than model quality.  
+- Secondary coverage (use only when the PDF is too dense for stakeholders): Fortune / Tom’s Hardware summaries referencing the report.
+
+**Usage guidance**
+- Phrase as “recent MIT NANDA / Project NANDA reporting suggests…” rather than “MIT proved”.
+- Do not over-index on the number. Use it to open the door, then pivot to *why* (evaluation + integration + governance).
+
+**Where to integrate**
+- `03_sales_enablement/why_95_percent_fail_onepager.md` (primary)
+- Optional: appendix note in `02_methodology/evaluation_first_principles.md`
+
+---
+
+## Claim 2  
+### “Model quality” is not the bottleneck — evaluation and real-world constraints are
+
+**Why grounding is needed**  
+This is your differentiator: “evaluation-first” must not sound like a personal philosophy.
+
+**Primary sources (big-company + platform)**
+- OpenAI docs: evaluation best practices and guidance that generative AI is variable and traditional testing is insufficient; evals are needed to test systems in production-like conditions.  
+- Anthropic research: “A statistical approach to model evaluations” stresses evaluation rigor, measurement uncertainty, and experimental design principles.
+
+**Usage guidance**
+- Use OpenAI/Anthropic as *credibility anchors* for “evals are required,” not as “endorsements” of your service.
+- Keep this section very short in client-facing docs.
+
+**Where to integrate**
+- `03_sales_enablement/why_95_percent_fail_onepager.md`
+- `02_methodology/evaluation_first_principles.md` (core grounding)
+
+---
+
+## Claim 3  
+### Evaluation must be domain-specific and SME-defined
+
+**Why grounding is needed**  
+Tool-vendors and engineers often claim generic benchmarks and automated evals are enough.
+
+**Primary sources (Ivy-league / domain eval)**
+- Stanford HAI (medical/health contexts): emphasizes holistic, real-world, expert-grounded evaluation approaches for LLMs in specialized domains.
+
+**Usage guidance**
+- Emphasize SMEs define **acceptability + failure modes**, not model internals.
+- Phrase as “domain experts anchor evaluation to real task demands.”
+
+**Where to integrate**
+- `02_methodology/evaluation_first_principles.md`
+- Brief rationale line in `02_methodology/sme_workshop_agenda.md`
+
+---
+
+## Claim 4  
+### Refusal / abstention is a required safety & governance control (not a failure)
+
+**Why grounding is needed (light)**  
+Some stakeholders believe partial answers are better than refusals.
+
+**Primary sources**
+- OpenAI guidance around evals + system behavior (use lightly; frame refusal as part of “specifying behavior before deployment,” not as moral philosophy).
+
+**Usage guidance**
+- Keep this to one paragraph + one reference.
+- Treat refusal as a risk control: “must refuse when criteria aren’t met.”
+
+**Where to integrate**
+- `02_methodology/failure_taxonomy_reference.md`
+
+---
+
+## Claim 5  
+### Evaluation artifacts retain value even if the system is not deployed
+
+**Grounding status**
+❌ No external grounding required.
+
+**Rationale**
+Governance and audit stakeholders already understand why decision frameworks and evaluation artifacts remain reusable.
+
+---
+
+## Claim 6  
+### Evaluation-first reduces long-term risk and rework
+
+**Grounding status**
+⚠️ Avoid quantitative ROI claims until you have your own case studies.
+
+**Rationale**
+Without your own evidence, external ROI claims are easy to attack and create false expectations.
+
+**Where to integrate**
+Verbal only (for now). Optionally in future, after 1–2 engagements with permissioned case studies.
+
+---
+
+## Approved reference shortlist (do not expand casually)
+
+**Institutional**
+[1] MIT / Project NANDA — The GenAI Divide: State of AI in Business 2025
+https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf
+[5] Stanford Human-Centered AI — Evaluation in High-Stakes Domains
+https://hai.stanford.edu/research
+
+**Big-company / platform**
+References
+[2] Hamel Husain — Evals Before Optimization
+https://hamel.dev/blog/posts/evals-faq/
+[3] Eugene Yan — Productizing Machine Learning / ML System Failure Modes
+https://eugeneyan.com/writing/
+[4] Anthropic — A Statistical Approach to Model Evaluations
+https://www.anthropic.com/research/statistical-approach-to-model-evals
+[6] Jason Snyder (Forbes) — MIT Finds 95% of GenAI Pilots Fail Because Companies Avoid Friction
+https://www.forbes.com/sites/jasonsnyder/2025/08/26/mit-finds-95-of-genai-pilots-fail-because-companies-avoid-friction/
+[7] Shreya Shankar — AI Engineering: The Missing Discipline
+https://www.sh-reya.com/blog/ai-engineering-short/
+
+
+---
+
+# The Evaluation-First Mental Model
+
+## How trustworthy AI-assisted knowledge systems are decided, not assumed
+
+---
+
+## Core idea (one sentence)
+
+> **Trustworthy AI systems are not built first and evaluated later — they are evaluated first, and only then allowed to exist.**
+
+---
+
+## The model at a glance (conceptual flow)
+
+```
+Domain & Risk Context
+        ↓
+SME-Defined Acceptance Criteria
+        ↓
+Failure Taxonomy
+        ↓
+Evaluation & Evidence
+        ↓
+Decision: Proceed · Iterate · Stop
+```
+
+Each layer constrains the next.
+Skipping a layer invalidates everything downstream.
+
+---
+
+## Layer 1 — Domain & risk context
+
+**Key question**
+
+> What decision would this system support, and what is the cost of being wrong?
+
+**What is defined**
+
+* decision scope
+* accountability
+* regulatory or governance constraints
+* unacceptable outcomes
+
+**Why this matters**
+Without explicit risk context, “accuracy” is meaningless.
+
+---
+
+## Layer 2 — SME-defined acceptance criteria
+
+**Key question**
+
+> What does “acceptable behavior” mean in this domain?
+
+**What is defined**
+
+* what a correct answer looks like
+* what errors are tolerable vs unacceptable
+* when the system must refuse to answer
+
+**Who defines this**
+
+* Subject Matter Experts (not engineers, not vendors)
+
+**Why this matters**
+Only domain experts can define decision acceptability.
+
+---
+
+## Layer 3 — Failure taxonomy
+
+**Key question**
+
+> How can this system fail in ways that matter?
+
+**What is defined**
+
+* hallucination
+* unsupported inference
+* omission
+* overconfidence
+* refusal failure
+* misalignment with domain norms
+
+**Why this matters**
+Trust is determined by *how systems fail*, not how often they succeed.
+
+---
+
+## Layer 4 — Evaluation & evidence
+
+**Key question**
+
+> How does the system behave when tested against real decision scenarios?
+
+**What happens**
+
+* evaluation datasets reflect real use cases
+* system outputs are inspected and annotated
+* failures are classified using the taxonomy
+* trade-offs and irreducible risks are surfaced
+
+**What this produces**
+
+* evidence, not impressions
+* traceable evaluation artifacts
+
+---
+
+## Layer 5 — Decision
+
+**Key question**
+
+> Based on evidence, should this system exist?
+
+**Possible outcomes**
+
+* **Proceed** — risks are acceptable
+* **Iterate** — risks can be reduced
+* **Stop** — risks are unacceptable
+
+All three outcomes are valid.
+
+**Why this matters**
+The goal is not deployment.
+The goal is a **defensible decision**.
+
+---
+
+## What this model prevents
+
+This model explicitly prevents:
+
+* demo-driven deployments
+* optimism bias (“it will get better”)
+* model-centric decision-making
+* late discovery of unacceptable behavior
+* post-hoc governance justification
+
+---
+
+## What this model enables
+
+This model enables:
+
+* early detection of no-go scenarios
+* transparent trade-off discussions
+* SME authority without technical burden
+* audit-ready decision trails
+* trust that survives scrutiny
+
+---
+
+## Relationship to tooling
+
+This model is **tool-agnostic**.
+
+Evaluation tooling (e.g. Evaluizer) is used to operationalize:
+
+* annotation
+* aggregation
+* regression tracking
+
+Tooling does not define:
+
+* acceptance criteria
+* failure categories
+* decisions
+
+Those remain human and domain-anchored.
+
+---
+
+## One-line takeaway (for slides or website)
+
+> **Evaluation defines whether an AI system is allowed to exist — not how impressive it looks.**
 
 ---
 # Evaluation-First GenAI Consulting — Knowledge Base
@@ -1026,181 +1758,234 @@ This demo:
 
 # 15-Minute Intro Call Script
 
-**Evaluation-First Knowledge System Assessment & Prototype**
+## Evaluation-First Knowledge System Assessment & Prototype
 
-## Goal of the call (internal)
-
-* Qualify fast: **is this a good fit** and **is there a real problem**
-* Align expectations: **not a chatbot demo**, **not production**
-* Secure next step: either **SME workshop** or **polite no**
-
-## Tone
-
-Calm, structured, senior. No hype.
+**FINAL – Canonical Version**
 
 ---
 
-## 0:00–0:45 — Opening
+## Objective of the call (internal)
 
-**You say:**
+This call has **one purpose**:
 
-> Thanks for taking the time. To make this useful, I suggest a short structure:
-> I’ll briefly explain how I work (2 minutes), then I’ll ask a few questions about your context (8–9 minutes), and we’ll close with a clear next step (2–3 minutes). Does that work?
+> Determine whether an **evaluation-first assessment** is appropriate — and if so, whether to proceed to an SME Evaluation Workshop.
 
-*(If they say yes, proceed. If they go off-track early, gently return to the structure.)*
-
----
-
-## 0:45–2:30 — What you do (your positioning, short)
-
-**You say:**
-
-> I help organizations design **AI-assisted knowledge systems that can be meaningfully evaluated and governed before deployment**.
-> Most GenAI efforts fail because success criteria and failure modes are not defined in a domain-specific way.
-> My approach is evaluation-first: we co-design acceptance criteria and an evaluation set with SMEs, then build a small instrumented prototype to test feasibility and risk.
-> The deliverable is a clear decision: proceed, iterate, or stop — with evidence.
-
-**Optional (if they ask “why you?”):**
-
-> My background is in data science, governance/decision-making, and cybersecurity in regulated environments — so I’m conservative by design.
+This is **not** a sales pitch.
+This is a **fit check**.
 
 ---
 
-## 2:30–11:30 — Qualification questions (pick 6–8, don’t rush)
+## Tone & posture
 
-### A) Use case & decisions (must-have)
+* Calm
+* Structured
+* Conservative
+* No hype
+* No promises
 
-1. **Decision:**
+If you sound excited, you’re doing it wrong.
 
-> What decision(s) would this system support? What changes if the answer is good?
+---
 
-2. **Users:**
+## 0:00–1:00 — Opening & framing
 
-> Who would use it day-to-day, and who would be accountable for outcomes?
+**You say (verbatim):**
 
-3. **Current workflow pain:**
+> Thanks for taking the time.
+>
+> To keep this useful, I suggest a simple structure:
+> I’ll briefly explain how I work (about two minutes), then I’ll ask a few questions about your context, and we’ll end with a clear next step.
+>
+> Does that work for you?
 
-> How do people solve this today — searching, asking colleagues, reinventing, manual review?
+If they say no → already a warning sign.
 
-### B) Risk & failure tolerance (must-have)
+---
 
-4. **Cost of being wrong:**
+## 1:00–3:00 — What you do (locked wording)
+
+**You say (verbatim):**
+
+> I work on **evaluation-first AI-assisted knowledge systems**.
+>
+> The focus is not on building chatbots or pilots, but on defining **acceptance criteria, failure modes, and decision risk** before any system is deployed.
+>
+> The outcome of my work is a clear recommendation to **proceed, iterate, or stop**, based on evidence — not a production system.
+
+Stop here.
+Do **not** elaborate unless asked.
+
+---
+
+## 3:00–11:00 — Qualification questions (core of the call)
+
+Ask **only what you need to decide**.
+Do not solve anything.
+
+---
+
+### A. Decision & accountability (mandatory)
+
+1. **Decision**
+
+> What decision would this system support, and what changes if the answer is good?
+
+2. **Accountability**
+
+> Who would remain accountable for outcomes if such a system were used?
+
+If they cannot answer these → no engagement.
+
+---
+
+### B. Risk & failure tolerance (mandatory)
+
+3. **Cost of being wrong**
 
 > What happens if the system gives a confident but incorrect answer?
 
-5. **Refusal design:**
+4. **Unacceptable failure**
 
-> Are there question types where the system should *never* answer and must refuse?
+> Are there answer types that would be unacceptable, even if they are rarely wrong?
 
-6. **Auditability / explainability:**
+5. **Refusal**
 
-> Do you need citations, traceability to documents, or an audit trail?
+> Are there questions the system should never answer and must refuse?
 
-### C) Data reality check (must-have)
-
-7. **Data types:**
-
-> What documents are we talking about (policies, procedures, reports, tickets, emails, contracts, etc.)?
-
-8. **Access constraints:**
-
-> Any restrictions around where the data can be processed (on-prem only, CH/EU cloud only, strict access controls)?
-
-### D) Organizational readiness (nice-to-have)
-
-9. **SME availability:**
-
-> Who are the 2–4 SMEs who could join a structured evaluation workshop?
-
-10. **Success criteria:**
-
-> If we did this well, what would you want to see at the end of 6–8 weeks?
-
-**Your rule:** If they can’t name SMEs or a decision owner, this is not ready.
+If refusal is not acceptable → strong warning sign.
 
 ---
 
-## 11:30–13:30 — Reflect back & frame the fit
+### C. Data & constraints (mandatory)
 
-**You say (summarize in 20–30 seconds):**
+6. **Document reality**
 
-> Let me reflect back what I heard:
-> You want to support [DECISION] for [USERS], using [DATA], with constraints around [GOV/SEC], and the main risk is [RISK]. Is that accurate?
+> What types of documents would the system rely on?
 
-Then:
+7. **Constraints**
 
-**If fit is good:**
-
-> This sounds like a good fit for an evaluation-first assessment. The next step would be a structured SME workshop to define acceptance criteria, failure modes, and an initial evaluation set.
-
-**If fit is weak:**
-
-> Based on what you described, I’m not sure this is the right time to build anything yet. The missing piece is [SMEs / data access / decision ownership]. If you address that, we can revisit.
+> Are there constraints around where data can be processed or who can access it?
 
 ---
 
-## 13:30–15:00 — Close with a concrete next step
+### D. Organizational readiness (mandatory)
 
-### Option 1: Schedule the SME Evaluation Workshop (best)
+8. **SMEs**
+
+> Who are the 2–4 Subject Matter Experts who could define acceptance criteria and failure modes?
+
+9. **Decision owner**
+
+> Who would make the final decision to proceed, iterate, or stop?
+
+If SMEs or decision owner are missing → do not proceed.
+
+---
+
+## 11:00–13:00 — Reflect & qualify out loud
+
+**You say (paraphrase, but be crisp):**
+
+> Let me reflect what I heard:
+> You’re looking to support **[decision]**, the main risk is **[risk]**, the data is **[type]**, and governance constraints include **[constraint]**.
+>
+> Based on that, this **does / does not** sound like a good fit for an evaluation-first assessment.
+
+Say *does not* if needed.
+This is where trust is built.
+
+---
+
+## 13:00–15:00 — Close with one of three outcomes
+
+---
+
+### Outcome A — Proceed to SME Evaluation Workshop (preferred)
 
 **You say:**
 
-> If you’re open to it, I suggest a 90–120 minute workshop with 2–4 SMEs and a process owner.
-> Pre-work is light: 5–10 sample documents and 5–10 real questions people ask today.
-> After the workshop, I can confirm scope and deliverables precisely.
+> The appropriate next step would be a **structured SME Evaluation Workshop**.
+>
+> It takes 90–120 minutes and results in domain-specific acceptance criteria and an initial evaluation dataset.
+>
+> SME involvement is typically **2–4 hours total**.
+>
+> If that sounds reasonable, I can outline the workshop and confirm scope.
 
-### Option 2: Request a small data sample first (when access is unclear)
+---
+
+### Outcome B — Pause (insufficient readiness)
 
 **You say:**
 
-> If workshop scheduling is hard right now, we can start with a small document sample and a question list. I’ll review it and propose a workshop agenda tailored to your domain.
+> At the moment, the missing piece is **[SMEs / decision owner / data access]**.
+>
+> Without that, any work would likely turn into a demo without evaluation rigor.
+>
+> If that changes, I’d be happy to revisit.
 
-### Option 3: Decline politely (protect your time)
+This saves you time and reputation.
+
+---
+
+### Outcome C — Decline (hard no)
 
 **You say:**
 
-> I don’t want to waste your time. Without [SME availability / data access / decision owner], this will likely become a demo without evaluation rigor. If you can align those pieces, I’d be happy to pick it up again.
+> Based on what you described, this engagement would not be appropriate.
+>
+> My work is intentionally conservative and not designed for rapid experimentation or deployment.
+>
+> I don’t want to create false expectations.
+
+This will *increase* respect, not reduce it.
 
 ---
 
-# What you do NOT say (common traps)
+## If asked about tooling (Evaluizer) — 20 seconds max
 
-* Don’t promise “95% accuracy” or any number.
-* Don’t say “we’ll eliminate hallucinations.”
-* Don’t say “enterprise-grade” unless asked; show it via method.
-* Don’t offer operations, uptime, maintenance.
-* Don’t discuss tools/models early (Evaluizer, embeddings, etc.) unless they ask.
+**You say (verbatim):**
 
----
+> An evaluation interface is used during the engagement and handed over so internal teams can continue evaluation independently.
+>
+> Tooling is secondary — evaluation criteria come first.
 
-# If they ask about Evaluizer (30-second answer)
-
-**You say:**
-
-> I use an evaluation interface so SMEs can review outputs against an evaluation dataset, annotate results, and run repeatable checks over time.
-> It makes the evaluation process concrete and helps internal teams continue evaluation after the engagement.
-
-*(Stop there. Offer a demo later, not now.)*
+Then stop.
 
 ---
 
-# Quick red flags (end early if 2+ occur)
+## What you must NOT say (ever)
 
-* “We just want a chatbot quickly”
-* No SME time available
-* No data access path
-* No clear decision owner
-* They want production deployment + support from you
-* They insist on vendor-like guarantees
+* No accuracy numbers
+* No “we reduce hallucinations”
+* No “enterprise-grade” buzzwords
+* No model or architecture talk
+* No promises about outcomes
+
+If asked, redirect to evaluation.
 
 ---
 
-# Success criteria for this call (internal)
+## Red flags (end early if ≥2)
 
-* ✅ Identified decision owner + SMEs
-* ✅ Understood risk tolerance and refusal needs
-* ✅ Confirmed data types + constraints
-* ✅ Agreed next step: SME workshop (preferred) or data sample review
+* “We just want something quick”
+* No SME availability
+* No decision owner
+* Resistance to refusal design
+* Expectation of production deployment
+* Tool-first mindset
+
+---
+
+## Success criteria for this call (internal)
+
+* Decision owner identified
+* SMEs identified
+* Risk tolerance understood
+* Constraints explicit
+* Clear next step chosen
+
+If these are not met → do not proceed.
 
 ---
 
@@ -1208,36 +1993,38 @@ Then:
 
 # Proposal
 
-**Evaluation-First Knowledge System Assessment & Prototype**
+## Evaluation-First Knowledge System Assessment & Prototype
 
 **Client:** [Organization name]
-**Date:** [Date]
+**Prepared for:** [Decision owner / unit]
 **Prepared by:** Fatih Ünal
+**Date:** [Date]
 
 ---
 
-## 1. Context & Objective
+## 1. Context & objective
 
-[Organization] is exploring the use of **AI-assisted knowledge systems** to support decisions related to:
+[Organization] is exploring the use of an **AI-assisted knowledge system** to support decisions related to:
 
-* **Decision(s):** [brief description]
-* **Users:** [roles / functions]
-* **Primary risk:** [e.g. incorrect, incomplete, or outdated answers]
+* **Decisions supported:** [short description]
+* **Primary users:** [roles / functions]
+* **Primary risk:** [e.g. incorrect, incomplete, or misleading answers]
 
-The objective of this engagement is **not to deploy a production system**, but to determine **whether such a system can be trusted in this domain**, and under which conditions.
+The objective of this engagement is **not to deploy a production system**, but to determine **whether such a system can be trusted in this domain**, and under which constraints.
 
 ---
 
 ## 2. Why an evaluation-first approach
 
-Industry experience shows that most GenAI initiatives fail in practice because:
+Most GenAI initiatives fail not because models are weak, but because **success and failure are never defined in a way that reflects real organizational risk**.
 
-* success criteria are implicit or undefined
-* evaluation does not reflect real decision risk
-* failure modes are discovered too late
-* there is no mechanism for ongoing assessment
+As a result:
 
-This engagement is designed around a different principle:
+* unacceptable errors are discovered late
+* refusal and uncertainty are not designed
+* systems perform well in demos but fail in practice
+
+This engagement is based on a single principle:
 
 > **If a system cannot be meaningfully evaluated in its domain context, it should not be deployed.**
 
@@ -1245,55 +2032,68 @@ This engagement is designed around a different principle:
 
 ## 3. Scope of the engagement (6–8 weeks)
 
+The engagement is a **fixed-scope, time-boxed assessment** structured around evaluation before implementation.
+
+---
+
 ### 3.1 Use-case & risk framing
 
-* Clarify supported decisions and accountability
-* Identify unacceptable vs tolerable failure modes
-* Define when the system must refuse to answer
+We clarify:
 
-**Deliverable:**
+* which decisions the system would support
+* who remains accountable for outcomes
+* what constitutes unacceptable vs tolerable failure
+* where the system must refuse to answer
+
+**Deliverable**
 Problem & risk framing document
 
 ---
 
 ### 3.2 Data & governance readiness
 
-* Review document types and structure
-* Assess sensitivity, access constraints, and audit requirements
-* Identify data gaps and no-go signals
+We assess:
 
-**Deliverable:**
+* document types and structure
+* sensitivity and access constraints
+* audit and governance requirements
+* data gaps and no-go signals
+
+A recommendation **not to proceed** is considered a valid outcome.
+
+**Deliverable**
 Data readiness & governance memo
 
 ---
 
 ### 3.3 Joint evaluation & system design (with SMEs)
 
-Structured working sessions with Subject Matter Experts to define:
+In structured working sessions, **Subject Matter Experts co-define**:
 
-* domain-specific success and failure criteria
-* error taxonomy and refusal rules
-* acceptance thresholds aligned to organizational risk
-* initial evaluation dataset (SME-authored or validated)
+* domain-specific acceptance criteria
+* failure modes and refusal rules
+* evaluation datasets reflecting real decision risk
 
-**Deliverables:**
+Evaluation design precedes system optimization.
+
+**Deliverables**
 
 * Evaluation design document
-* Initial evaluation dataset
+* SME-validated evaluation dataset
 
 ---
 
 ### 3.4 Evaluation-guided prototype
 
-Implementation of a **limited-scope, instrumented prototype** to:
+A limited-scope prototype is implemented as an **instrumented test harness**, not a production system.
 
-* run batch evaluations against agreed criteria
-* analyze failure modes and trade-offs
-* support regression testing as prompts or data change
+It is used to:
 
-The prototype serves as a **test harness**, not a production system.
+* run evaluations against agreed criteria
+* inspect failure modes and trade-offs
+* identify irreducible risks
 
-**Deliverables:**
+**Deliverables**
 
 * Instrumented prototype
 * Evaluation report with failure analysis
@@ -1302,54 +2102,54 @@ The prototype serves as a **test harness**, not a production system.
 
 ### 3.5 Decision memo
 
-A structured recommendation covering:
+The engagement concludes with a structured recommendation to:
 
-* feasibility against acceptance criteria
-* remaining risks and constraints
-* effort required to proceed
-* recommendation to proceed, iterate, or stop
+> **Proceed · Iterate · Stop**
 
-**Deliverable:**
+**Deliverable**
 Decision memo suitable for management and governance review
 
 ---
 
-## 4. Evaluation infrastructure
+## 4. Engagement success criteria
 
-As part of the engagement, an **evaluation interface and workflow** is provided based on *Evaluizer*, an open-source framework for systematic LLM evaluation.
+This engagement is successful if, at the end of the assessment, the organization has:
+
+* a documented evaluation framework grounded in domain risk
+* a prototype tested against SME-defined acceptance criteria
+* a clear, defensible decision to proceed, iterate, or stop
+
+No production deployment is required for success.
+
+---
+
+## 5. Evaluation infrastructure & continuity
+
+An evaluation interface based on **Evaluizer** is used during the engagement and handed over so internal teams can continue evaluation independently.
 
 This enables:
 
-* transparent review of model outputs against evaluation datasets
-* manual annotation by SMEs
-* automated checks using deterministic functions and LLM judges
-* continued evaluation after the engagement concludes
+* transparent inspection of system behavior
+* repeatable evaluation over time
+* regression detection as data or prompts change
 
-The tooling is configured for the specific use case and handed over as part of the delivery.
-
----
-
-## 5. Engagement model
-
-* Fixed scope
-* Fixed duration (6–8 weeks)
-* Limited number of concurrent clients
-* No production deployment
-* No ongoing operational responsibility
-
-Work is conducted independently using client-provided data and environments.
+No vendor lock-in is introduced.
 
 ---
 
-## 6. Roles & expectations
+## 6. Roles & time commitment
 
-**Client provides:**
+**Client provides**
 
 * access to representative documents
-* availability of 2–4 SMEs for evaluation workshops
-* a decision owner for scoping and sign-off
+* availability of **2–4 Subject Matter Experts**
+* one decision owner for scoping and sign-off
 
-**Consultant provides:**
+**Time commitment**
+
+* SME involvement is typically limited to **2–4 hours total**, primarily through a structured evaluation workshop
+
+**Consultant provides**
 
 * evaluation-first methodology
 * facilitation of SME workshops
@@ -1358,13 +2158,15 @@ Work is conducted independently using client-provided data and environments.
 
 ---
 
-## 7. Commercials
+## 7. Engagement model
 
-**Fee:** CHF [XX’000] (fixed)
-**Payment terms:** [e.g. 50% start / 50% end]
-**Start date:** [date]
+* Fixed scope
+* Fixed duration (6–8 weeks)
+* Limited number of concurrent clients
+* No production deployment
+* No ongoing operational responsibility
 
-No licenses or recurring fees.
+**This engagement is intentionally conservative and is not designed for rapid experimentation or production deployment.**
 
 ---
 
@@ -1375,178 +2177,175 @@ No confidential or proprietary information of third parties is reused or derived
 
 ---
 
-## 9. Next step
+## 9. If the recommendation is to stop
+
+If the recommendation is not to proceed, **all evaluation artifacts, decision frameworks, and findings remain usable** for future initiatives, audits, or internal reviews.
+
+Stopping is treated as a valid and valuable outcome.
+
+---
+
+## 10. Commercials
+
+**Fee:** CHF [XX’000] (fixed)
+**Payment terms:** [e.g. 50% start / 50% end]
+**Start date:** [date]
+
+---
+
+## 11. Next step
 
 Upon confirmation, the engagement starts with scheduling the **SME Evaluation Workshop**, followed by document review and detailed planning.
 
 ---
 
-### Consultant note (internal)
+---
 
-This proposal is intentionally conservative.
-If a client pushes for speed, production, or guarantees → **decline or re-scope**.
+# Why 95% of GenAI Initiatives Fail
+
+## And What the 5% That Work Do Differently
 
 ---
 
-## What we’ve achieved so far
+## Executive summary
 
-At this point you have:
+Most Generative AI initiatives do not fail because the models are weak.
+They fail because **organizations deploy systems without defining what acceptable behavior means in their specific domain**.
 
-* a **clear service**
-* a **repeatable sales call**
-* a **proposal that matches the call**
-* consistent language across all artifacts
-
-This is already a complete consulting “machine”.
+Recent institutional reporting suggests that a large majority of organizations experimenting with GenAI see **little to no measurable business value**, despite access to increasingly capable models [1]. The decisive factor is not model choice, but whether **evaluation, risk, and governance are addressed before deployment**.
 
 ---
 
-## Next (final artifact in this set)
+## The real failure mode (not the one people talk about)
 
-👉 **`05_tools_evaluizer/evaluizer_demo_flow.md`**
-A short, non-technical demo flow you can:
+The dominant failure pattern across GenAI initiatives is **not**:
 
-* show in follow-up calls
-* include screenshots from later
-* use to reduce fear around “maintenance after you leave”
+* lack of data
+* poor prompts
+* insufficient model capability
 
-When you’re ready, say:
+Instead, systems fail because:
 
-> “Proceed with the Evaluizer demo flow.”
+* success and failure are never explicitly defined
+* unacceptable errors are discovered only after deployment
+* refusal and uncertainty are not designed as first-class behaviors
+* evaluation is treated as an afterthought rather than infrastructure
 
-We’ll keep it tight and usable.
-
-# 2️⃣ One-Pager
-
-## “Why 95% of GenAI Systems Fail — and how to be in the 5%”
-
-This is **not** a blog post.
-It’s a conversation anchor.
-
-You send it:
-
-* before intro calls
-* to skeptical stakeholders
-* to decision-makers who are nervous but curious
+Practitioners working on real-world ML and GenAI systems consistently report that **optimization without evaluation is meaningless** — systems are tuned without knowing whether their behavior is acceptable in real decision contexts [2][3].
 
 ---
 
-### Headline
+## Why better models don’t fix this
 
-**Why 95% of GenAI Systems Fail in Practice**
+Modern foundation models are already capable of producing fluent and confident answers across many domains. The problem is that **fluency is not correctness**, and correctness is not the same as *acceptability*.
 
-*And what successful organizations do differently*
-
----
-
-### The uncomfortable reality
-
-Most GenAI systems fail not because the models are weak, but because organizations deploy them **without defining what success and failure actually mean**.
-
-Typical symptoms:
-
-* impressive demos that collapse in real use
-* pilot fatigue and loss of trust
-* hidden risks discovered too late
-* inability to explain or defend system behavior
-
----
-
-### The five root causes of failure
-
-1. **No explicit success criteria**
-   “It seems good” is not an evaluation strategy.
-
-2. **No domain-grounded evaluation data**
-   Systems are tested on generic prompts, not real decisions.
-
-3. **No error taxonomy**
-   All mistakes are treated as equal — until one causes damage.
-
-4. **No refusal or uncertainty design**
-   Systems answer questions they should not answer.
-
-5. **No way to measure improvement over time**
-   Changes are made blindly, without regression testing.
-
----
-
-### What the 5% do differently
-
-Successful GenAI systems are designed around **evaluation first**:
-
-* domain experts define acceptable and unacceptable behavior
-* risks are classified before systems are built
-* failure modes are made explicit
-* evaluation datasets exist before optimization
-* systems are tested continuously as data and prompts change
+Research from leading AI labs emphasizes that model behavior is inherently variable and context-dependent, and that meaningful progress depends on **statistically sound, task-specific evaluation**, not generic benchmarks [4].
 
 In other words:
-**They treat GenAI as a decision system, not a demo.**
+
+> Model quality is no longer the bottleneck.
+> **Evaluation quality is.**
 
 ---
 
-### The key principle
+## The missing ingredient: domain-specific evaluation
 
-> If a system cannot be evaluated in a way that reflects real-world risk, it should not be deployed.
+What separates the minority of GenAI systems that work in practice is not architecture, but process.
 
----
+Effective systems are built around:
 
-### What this means in practice
+* **domain-specific acceptance criteria**, not generic accuracy scores
+* **Subject Matter Experts defining what is acceptable**, risky, or unacceptable
+* **explicit failure modes**, including when the system must refuse to answer
 
-Before building anything, organizations should be able to answer:
-
-* What does a *bad* answer look like?
-* When must the system refuse?
-* Which errors are unacceptable?
-* Who remains accountable?
-
-If these questions cannot be answered, no amount of model tuning will help.
+Applied AI research in regulated and high-stakes domains shows that **expert-grounded, task-specific evaluation** is necessary to prevent silent failure and misplaced trust [5].
 
 ---
 
-### Why this matters
+## Why “friction” is unavoidable (and necessary)
 
-Evaluation-first design:
+Some organizations interpret evaluation, governance, and SME involvement as “friction” that slows innovation. Empirical reporting suggests the opposite: **avoiding this friction is a key reason pilots fail to translate into durable value** [1][6].
 
-* reduces deployment risk
-* prevents reputational damage
-* saves time and cost by avoiding false starts
-* builds trust with users and stakeholders
+The organizations that succeed accept early friction in exchange for:
 
-It is slower upfront — and dramatically faster overall.
+* predictable system behavior
+* defensible deployment decisions
+* long-term trust and adoption
 
----
-
-### Closing line (soft CTA)
-
-If your organization is under pressure to “use GenAI”, but unsure how to do so responsibly, an evaluation-first assessment can clarify whether this is the right path — and under what conditions.
+Avoiding evaluation does not remove friction — it **defers it**, often until failure is public and costly.
 
 ---
 
-## Consultant’s closing assessment
+## The AI engineering reality
 
-You now have:
+Modern AI engineering practice increasingly recognizes that model-centric thinking is insufficient. What matters is **end-to-end system behavior**, including evaluation loops, human feedback, and acceptance criteria.
 
-* a **distinctive core offer**
-* a **credible evaluation methodology**
-* a **tangible SME interaction**
-* a **clear narrative explaining failure and success**
-* a **tool (Evaluizer) that supports continuity without locking clients in**
-
-This is not “AI consulting”.
-This is **decision systems consulting with modern tools**.
+A concise overview of this shift is illustrated in Shreya Shankar’s AI engineering framework, which highlights evaluation and feedback as central system components rather than post-hoc checks [7].
 
 ---
 
-## What I would do next (optional but powerful)
+## What this means in practice
 
-When you’re ready, the next logical artifacts are:
+A GenAI initiative should not begin with:
 
-1. **A 15-minute intro call script** (what you say, what you don’t)
-2. **A 1-page proposal template** using the workshop + assessment
-3. **A short Evaluizer demo flow** (screenshots + explanation)
+* model selection
+* prompt tuning
+* tool integration
 
-But pause here if you need — this is already a *solid, coherent product*.
+It should begin by answering:
 
-If you want to continue, tell me which of the three you want next.
+* What decisions will this system support?
+* What errors are unacceptable?
+* When must the system refuse to answer?
+* How will we know if the system is safe to use?
+
+If these questions cannot be answered, deployment is premature.
+
+---
+
+## The evaluation-first alternative
+
+An **evaluation-first approach** inverts the usual process:
+
+1. Define domain-specific acceptance criteria with SMEs
+2. Design evaluation datasets reflecting real decision risk
+3. Test system behavior against those criteria
+4. Decide to **proceed, iterate, or stop** based on evidence
+
+Only systems that survive this process should move toward deployment.
+
+---
+
+## Closing thought
+
+The gap between GenAI demos and GenAI systems that deliver real value is not intelligence — it is **discipline**.
+
+Evaluation is not overhead.
+It is the mechanism that turns powerful models into trustworthy systems.
+
+---
+
+## References
+
+[1] MIT / Project NANDA — *The GenAI Divide: State of AI in Business 2025*
+[https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf)
+
+[2] Hamel Husain — *Evals Before Optimization*
+[https://hamel.dev/blog/posts/evals-faq/](https://hamel.dev/blog/posts/evals-faq/)
+
+[3] Eugene Yan — *Productizing Machine Learning* / *ML System Failure Modes*
+[https://eugeneyan.com/writing/](https://eugeneyan.com/writing/)
+
+[4] Anthropic — *A Statistical Approach to Model Evaluations*
+[https://www.anthropic.com/research/statistical-approach-to-model-evals](https://www.anthropic.com/research/statistical-approach-to-model-evals)
+
+[5] Stanford Human-Centered AI — Evaluation in High-Stakes Domains
+[https://hai.stanford.edu/research](https://hai.stanford.edu/research)
+
+[6] Jason Snyder (Forbes) — *MIT Finds 95% of GenAI Pilots Fail Because Companies Avoid Friction*
+[https://www.forbes.com/sites/jasonsnyder/2025/08/26/mit-finds-95-of-genai-pilots-fail-because-companies-avoid-friction/](https://www.forbes.com/sites/jasonsnyder/2025/08/26/mit-finds-95-of-genai-pilots-fail-because-companies-avoid-friction/)
+
+[7] Shreya Shankar — *AI Engineering: The Missing Discipline*
+[https://www.sh-reya.com/blog/ai-engineering-short/](https://www.sh-reya.com/blog/ai-engineering-short/)
+
+---

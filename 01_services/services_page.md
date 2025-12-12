@@ -1,218 +1,227 @@
 
----
-
-# `01_services/services_page.md`
-
-**FINAL – Canonical, Evaluation-First Version**
 
 ---
 
 # Services
 
-## Evaluation-First Knowledge System Assessment & Prototype
+## Independent AI Risk & Readiness Audits
 
 ---
 
-## What this service is
+## What I do
 
-I help organizations design **evaluation-first AI-assisted knowledge systems** that can be meaningfully evaluated, governed, and trusted **before deployment**.
+I provide **independent risk and readiness assessments** for AI-assisted knowledge systems.
 
-The focus is not on building chatbots or pilots, but on defining **acceptance criteria, failure modes, and decision risk** before any system is operationalized.
+My role is not to build or optimize AI systems.
+My role is to **assess whether they are safe, defensible, and appropriate to deploy** in a given organizational and regulatory context.
 
-The outcome is a **clear, evidence-based decision** on whether such a system should exist in your context — and under what constraints.
+I operate as an **external assurance specialist** — comparable to a technical auditor — helping organizations make evidence-based decisions about AI use **before** reputational, legal, or operational harm occurs.
 
 ---
 
-## The problem this service addresses
+## Who this is for
 
-Most GenAI initiatives fail not because models are weak, but because **success and failure are never defined in a way that reflects real organizational risk**.
+This service is designed for organizations that:
+
+* operate in **regulated or high-trust environments**
+* are accountable to regulators, boards, or the public
+* feel pressure to “do something with AI” but are unsure what is safe
+* want an **independent second opinion**, not vendor optimism
+
+Typical clients include:
+
+* NGOs and foundations
+* public sector and cantonal organizations
+* regulated SMEs
+* compliance- and security-conscious teams
+
+---
+
+## What problem this addresses
+
+Most AI initiatives fail **after deployment**, not during prototyping.
+
+The root cause is rarely model quality.
+It is that **“acceptable behavior” is never defined in a way that reflects real organizational risk**.
 
 As a result:
 
-* systems perform well in demos but fail in real use
-* unacceptable errors are discovered too late
+* failure modes are discovered too late
 * refusal and uncertainty are not designed
-* trust erodes quickly
+* accountability is unclear
+* governance becomes reactive
 
-This service is built on the opposite principle:
-
-> **If a system cannot be meaningfully evaluated in its domain context, it should not be deployed.**
-
----
-
-## Who this service is for
-
-This service is suited for organizations where:
-
-* decisions depend on complex internal documents
-* incorrect or misleading answers have legal, financial, or reputational consequences
-* explainability, auditability, and governance matter
-* data usage is constrained by regulation or policy
-
-Typical contexts include regulated organizations, public institutions, NGOs, and research-driven environments.
+My work addresses this gap by placing **risk, failure, and decision defensibility** at the center of AI system assessment.
 
 ---
 
-## Who this service is not for
+## My role (and what I explicitly do not do)
 
-This service is **not** intended for organizations seeking:
+I act as an **independent assessor**.
 
-* a ready-made SaaS product
-* customer support or sales chatbots
-* rapid experimentation or demo-driven pilots
-* real-time or mission-critical systems
-* ongoing system operation or maintenance
+I:
 
-If speed matters more than correctness, this engagement is not a good fit.
+* evaluate system behavior against domain-specific risk criteria
+* classify failure modes and refusal gaps
+* assess regulatory and governance exposure
+* produce clear, defensible recommendations
 
----
+I explicitly do **not**:
 
-## Scope & approach (evaluation-first)
+* implement or deploy systems
+* tune models or prompts
+* own production outcomes
+* provide legal certification or sign-off
 
-The engagement is structured as a **fixed-scope, time-boxed assessment** (typically **6–8 weeks**) and follows a strict evaluation-first sequence.
-
----
-
-### 1. Use-case & risk framing
-
-We clarify:
-
-* which decisions the system would support
-* who remains accountable for outcomes
-* what constitutes unacceptable vs tolerable failure
-* where the system must refuse to answer
-
-**Deliverable**
-Problem & risk framing document
+This independence is deliberate and non-negotiable.
 
 ---
 
-### 2. Data & governance readiness
+## Core services (Phase-1)
 
-We assess:
-
-* document types and structure
-* sensitivity and access constraints
-* audit and governance requirements
-* data gaps and no-go signals
-
-A recommendation **not to proceed** is considered a valid outcome.
-
-**Deliverable**
-Data readiness & governance memo
+All services are **time-boxed, audit-shaped, and evidence-based**.
 
 ---
 
-### 3. Joint evaluation & system design (with SMEs)
+### Risk & Safety Workshop
 
-This is the core of the engagement.
+**Primary entry point**
 
-In structured working sessions, **Subject Matter Experts co-define**:
+A structured workshop with Subject Matter Experts and decision owners to define:
 
-* domain-specific acceptance criteria
-* failure modes and refusal rules
-* evaluation datasets reflecting real decision risk
+* what “safe” and “acceptable” mean in your domain
+* which failure modes are unacceptable
+* when an AI system must refuse to answer
 
-Evaluation design precedes system optimization.
+**Outcome**
 
-**Deliverables**
-
-* Evaluation design document
-* SME-validated evaluation dataset
-
----
-
-### 4. Evaluation-guided prototype
-
-A limited-scope prototype is implemented as an **instrumented test harness**, not a production system.
-
-It is used to:
-
-* run evaluations against agreed criteria
-* inspect failure modes and trade-offs
-* identify irreducible risks
-
-**Deliverables**
-
-* Instrumented prototype
-* Evaluation report with failure analysis
+* documented risk map
+* explicit acceptance and refusal criteria
+* clarity on whether further assessment is justified
 
 ---
 
-### 5. Decision memo
+### Vendor Safety Audit
 
-The engagement concludes with a structured recommendation to:
+An independent assessment of AI vendors or AI-enabled SaaS products.
 
-> **Proceed · Iterate · Stop**
+Focus areas include:
 
-**Deliverable**
-Decision memo suitable for management and governance review
+* data usage and training rights
+* data residency and control
+* architectural and contractual red flags
 
----
+**Outcome**
 
-## Engagement success criteria
-
-This engagement is successful if, at the end of the assessment, the organization has:
-
-* a documented evaluation framework grounded in domain risk
-* a prototype tested against SME-defined acceptance criteria
-* a clear, defensible decision to proceed, iterate, or stop
-
-No production deployment is required for success.
+* short audit memo
+* clear recommendation: *Proceed · Conditional · Do not proceed*
 
 ---
 
-## Evaluation infrastructure & continuity
+### Adversarial Behavior Assessment
 
-An evaluation interface based on **Evaluizer** is used during the engagement and handed over so internal teams can continue evaluation independently.
+A black-box stress test of an existing AI prototype or system.
 
-This enables:
+The goal is to surface:
 
-* transparent inspection of system behavior
-* repeatable evaluation over time
-* regression detection as data or prompts change
+* hallucination and unsupported inference
+* overconfidence and omission
+* refusal failures
+* misalignment with domain norms
 
-No vendor lock-in is introduced.
+This is a **behavioral risk assessment**, not penetration testing.
 
----
+**Outcome**
 
-## Engagement model
-
-* Fixed scope
-* Fixed duration (6–8 weeks)
-* Limited number of concurrent clients
-* No production deployment
-* No ongoing operational responsibility
-
-**This engagement is intentionally conservative and is not designed for rapid experimentation or production deployment.**
+* classified failure report
+* severity assessment
+* go / no-go signal
 
 ---
 
-## Time commitment
+### EU AI Act Gap Analysis (Scoped)
 
-* SME involvement is typically limited to **2–4 hours total**, primarily through a structured evaluation workshop
-* One decision owner is required for scoping and sign-off
+A non-certifying readiness assessment focused on **exposure**, not compliance guarantees.
+
+This service helps organizations understand:
+
+* whether their use case is likely to be classified as high-risk
+* where governance, documentation, or transparency gaps exist
+
+**Outcome**
+
+* gap matrix
+* risk classification
+* decision-oriented next steps
 
 ---
 
-## Independence & IP
+## How engagements work
 
-All work is conducted independently and uses only client-provided or publicly available materials.
-No confidential or proprietary information of third parties is reused or derived.
+All engagements follow the same structure:
+
+1. **Risk framing**
+2. **SME-defined acceptance criteria**
+3. **Failure classification**
+4. **Evidence-based assessment**
+5. **Formal recommendation**
+
+Possible outcomes are:
+
+* **Proceed**
+* **Iterate**
+* **Stop**
+
+A recommendation to *stop* is considered a **successful outcome** if risk is unacceptable.
 
 ---
 
-## If the recommendation is to stop
+## What you receive
 
-If the recommendation is not to proceed, **all evaluation artifacts, decision frameworks, and findings remain usable** for future initiatives, audits, or internal reviews.
+Depending on the service, deliverables may include:
 
-Stopping is treated as a valid and valuable outcome.
+* audit memos
+* risk maps and failure taxonomies
+* evaluation evidence
+* defensible recommendations for decision owners
+
+If an engagement ends with “Stop,” you still receive:
+
+* clear documentation of why
+* governance-ready artifacts
+* material that can be used internally or with other vendors
+
+---
+
+## Availability & engagement constraints
+
+To preserve independence and quality:
+
+* I operate as a **solo assessor**
+* engagements are **fixed-scope and time-boxed**
+* synchronous work is limited and scheduled
+* data access delays do not extend engagement duration
+
+This ensures focus, predictability, and audit-grade rigor.
+
+---
+
+## A note on conservatism
+
+My approach is intentionally conservative.
+
+If risk cannot be bounded, or acceptable behavior cannot be defined, the correct recommendation is **not to deploy**.
+
+This is not resistance to innovation.
+It is respect for accountability.
 
 ---
 
 ## Next step
 
-If you are considering an AI-assisted knowledge system and want to determine **whether it can be trusted in your domain**, an initial discussion can clarify whether this engagement is appropriate.
+Most engagements start with a **Risk & Safety Workshop**.
+
+If you are unsure whether your AI initiative is safe, appropriate, or worth pursuing, this is the right place to begin.
 
 ---
 
